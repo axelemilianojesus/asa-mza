@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bg-ss{background-image: url("../img/serviciosimg.jpg");}
+
+
+section.perfil,
+section.login,
+section.registro {
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    background-image: url("../img/black-background.jpg");
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div.container {
+    width: 320px;
+    padding: 3px;
+    flex-wrap: wrap;
+    border: 1px solid #E27F41;
+
+}
+
+img.logo {
+    width: 120px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/*
+form {
+    padding: 15px;
+}
+*/
+
+h1.forms {
+
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: #333333;
+    width: auto;
+    margin: 3px;
+    padding: 5px;
+}
+
+.container .errores ul {
+    width: 97%;
+    justify-content: center;
+    margin: 5px;
+/*     padding: 5px; */
+    color: white;
+    background-color: #E27F41;
+}
+
+.container .errores ul li {
+    list-style: none;
+    font-style: italic;
+}
+
+div.formLog {
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+
+p.info {
+    display: none;
+    width: 98%;
+    color: white;
+    background-color: #E27F41;
+    margin-left: 3px;
+    padding-left: 20px;
+}
+
+.formLog:focus-within .info {
+    display: block;
+}
+
+input,
+label.admin {
+    font-size: 16px;
+    margin: 1px;
+    width: 92%;
+    padding: 5px;
+
+
+}
+
+input.chkbx {
+    width: auto;
+    margin: 5px 10px 5px 10px;
+}
+
+div.formLog i {
+    min-width: 80px;
+    text-align: center;
+    color: #999;
+    padding: 0px 10px 0px 10px;
+
+
+}
+
+i#avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+i#perfil {
+    color: white;
+}
+
+select.formLog {
+    width: 92%;
+    margin: 1px;
+    width: 40%;
+    padding: 5px;
+}
+
+button.form {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background: #333333;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button.perfil {
+    width: 20%;
+    padding: 10px 10px;
+    color: white;
+    background-color: #333333;
+
+}
+
+button:hover,
+button.perfil:hover {
+    background: cadetblue;
+}
+
+div.formLog#recordar {
+    margin: 6px;
+    border: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+div.formLog#avatar {
+    display: flex;
+    justify-content: center;
+}
+
+div.formLog#permiso {
+    font-size: 11px;
+}
+
+div.formLog#button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input.chkbx {
+    /*    margin: 5px;*/
+
+}
+
+input.file {
+    font-size: 11px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+
+}
+
+p.formLog {
+    margin: 5px;
+    font-size: 12px;
+}
+
+a.formLog {
+    font-size: 13px;
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+a.formLog:hover {
+    color: cadetblue;
+}
+
+
+@media screen and (min-width: 700px) {
+    body {
+        font-family: sans-serif;
+        margin: 0 auto;
+    }
+
+    section.perfil,
+    section.login,
+    section.registro {
+
+        width: 100%;
+        padding: 0px;
+
+    }
+
+    div.container {
+        width: 350px;
+        padding: 3px;
+        flex-wrap: wrap;
+        border: 1px solid #E27F41;
+
+    }
+
+
+    img.logo {
+        width: 30%;
+        display: flex;
+        margin: 0 auto;
+    }
+}

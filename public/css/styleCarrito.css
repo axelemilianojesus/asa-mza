@@ -1,0 +1,207 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+section.ppal {
+/*    display: flex;*/
+    width: 100%;
+    /*    max-width: 1440px;*/
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+
+
+}
+h1.ppal__title {
+
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: black;
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+
+/* CONTENEDOR PADRE DE PRODUCTOS*/
+
+div.main__prod {
+    /*    display: inline-block;*/
+    width: 100%;
+    background-color: #F7F7F7;
+    /*  border: 1px solid gainsboro;*/
+    justify-content: center;
+    padding: 0% 5% 5% 5%;
+}
+
+h2.prod__title {
+    display: inline;
+    font-size: 1.5em;
+    /* font-weight: 800; */
+    color: white;
+    margin: 15px 0px;
+    padding: 15px 0px;
+    background-color: #333333;
+
+}
+
+h2.ppal__title#blanco{
+    color: white;
+}
+h2.ppal__title#naranja{
+    color: #E27F41;
+}
+
+/*CONTENEDOR HIJO DE PRODUCTOS*/
+div.prod__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+article.prod__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*    padding: 2px 0px 2px 0px;*/
+}
+
+img.prod__img {
+    width: 25%;
+    margin: 2px;
+
+}
+
+div.prod__1--descripcion {
+    display: block;
+    justify-content: center;
+    width: 40%;
+}
+
+h3.prod__title {
+    font-size: 1.1em;
+    font-style: italic;
+
+
+}
+
+
+p.prod__text {
+    font-size: 0.7em;
+
+}
+
+p.prod__price {
+    font-size: 0.7em;
+    font-style: italic;
+    color: #E27F41;
+
+}
+
+/* CONTENEDOR DE cantidades*/
+
+div.prod__cantidad {
+    width: 30%;
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1em;
+}
+
+input.prod__cantidad {
+    width: 25%;
+}
+
+button.prod__buttom--delete {
+    width: auto;
+    padding: 0px 10px 0px 10px;
+    background-color: #E27F41;
+    border: none;
+
+}
+
+/* CONTENEDOR PADRE DE SUMARY */
+aside.sumary {
+/*    display: flex;*/
+    width: 100%;
+    height: 50%;
+    background-color: #333333;
+/*    padding-bottom: 15px;*/
+    padding: 0% 20% 10% 20%;
+
+}
+
+div.sumary {
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2.sumary__title {
+    font-size: 1.5em;
+
+    color: white;
+    padding: 5px;
+}
+
+input.sumary__code {
+    width: 80%;
+}
+
+h5.sumary__title--prod,
+h5.sumary__price {
+    font-size: 1em;
+    color: white;
+}
+
+h4.sumary__price--total,
+h4.sumary__price--total--price {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+}
+
+button.sumary__buttom--buy {
+    width: 80%;
+    background-color: #E27F41;
+    border: none;
+}
+
+a.sumary__buttom {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    section.ppal {
+        display:flex;
+        max-width: 1440px;
+        justify-content:center;
+        align-content:center;
+    }
+
+    div.main__prod {
+        /* display: block; */
+        width: 60%;
+        background-color: #F7F7F7;
+        justify-content: center;
+        padding: 0% 5% 5% 5%;
+    }
+
+    aside.sumary {
+        /* display: block; */
+        width: 35%;
+        height: 50%;
+        background-color: #333333;
+        justify-content: center;
+        /* padding-bottom: 15px; */
+        padding: 0% 5% 5% 5%;
+    }
+    input.sumary__code {
+        width: 95%;
+    }
+}

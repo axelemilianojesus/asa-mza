@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bg-ss{background-image: url("../img/serviciosimg.jpg");}
+
+
+.textotitulo h2{
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.servicios{
+  text-align: center;
+}
+.servicios h3{
+  font-size: 35px;
+  background-color:#E27F41;
+  background-size: 10px;
+  color: white;
+}
+.servicios h4{
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+.servicios p{
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.interior{
+  text-align: center;
+}
+.interior h3{
+  font-size: 35px;
+  background-color:#E27F41;
+  color: white;
+}
+.interior h4{
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+.interior p{
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+@media only screen and (min-width: 880px) {
+
+ .containerserv{
+    display: flex;
+    justify-content: space-around ;
+    padding: 30px;
+ }
+
+}

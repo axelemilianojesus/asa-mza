@@ -1,0 +1,45 @@
+.bg-faq{background-image: url("../img/bg-faq.jpg");}
+
+div.container{
+    padding: 3px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+div.titulo {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 4px;
+
+}
+
+div.titulo h3#blanco {
+    color: white;
+}
+
+div.titulo h3#naranja {
+    color: #E27F41;
+}
+
+
+.preguntasFrecuentes h2 {
+  background-color: #E27F41;
+  color: white;
+}
+
+.preguntasFrecuentes p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 880px) {
+  div.container{
+      margin-top: 40px;
+      margin-bottom: 40px;
+}
+
+}

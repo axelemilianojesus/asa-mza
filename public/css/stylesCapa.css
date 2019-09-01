@@ -1,0 +1,289 @@
+body.capacitacion {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+div.menu {
+    width: 100%;
+    top: 5px;
+
+
+}
+
+div.container {
+
+/*    max-width: 1440px;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 170px;
+    background: #fff;
+
+}
+
+
+div.titulo {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+
+
+}
+h1.capacitacion {
+
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    width: auto;
+    background-color: black;
+    margin: 15px 0px;
+    padding: 15px 0px;
+}
+
+div.span{
+/*    box-shadow: 0px 0px 4px 4px #E27F41;*/
+    padding: 3px;
+    margin: 15px 0px;
+}
+/****************************
+ * PRODUCTOS CAPACITACIONES *
+****************************/
+
+section.productos {
+/*    width: 100%;*/
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .product {
+    position: relative;
+    width: 450px;
+    height: 660px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.container .product .imgBx {
+    /*ESTO NOS DA LA POSICION INICIAL DEL CIRCULO */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: circle(800px at center 230px);
+    transition: 0.3s;
+    transition-delay: 0.3s;
+
+}
+
+.container .product:hover .imgBx {
+    /* ESTO NOS DA LA POSICION Y TAMANO FINAL DEL CIRCULO */
+
+    clip-path: circle(180px at center 230px);
+    transition-delay: 0s;
+}
+
+.container .product .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container .product:hover .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+
+}
+
+.container .product .contenido {
+    position: absolute;
+    left: 0;
+    top: 450px;
+    bottom: 0;
+    width: 100%;
+    /*    height: 55%;*/
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container .product .contenido h2.product {
+    margin: 0;
+    padding: 0;
+}
+
+.container .product .contenido a#comprar {
+    text-decoration: none;
+    background-color: #E27F41;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+.container .product .contenido a#ampliar {
+    text-decoration: none;
+    background-color: #EAB22A;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+.container .product .contenido h2,
+.container .product .contenido p,
+.container .product .contenido a#comprar,
+.container .product .contenido a#ampliar {
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(20px);
+
+}
+
+.container .product:hover .contenido h2 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+
+.container .product:hover .contenido p {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+
+.container .product:hover .contenido a#comprar,
+.container .product:hover .contenido a#ampliar {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+
+/****************************
+ * SECCION DE TARJETAS  *
+****************************/
+
+.container .productos .cards {
+    width: 70%;
+}
+
+.container .productos .cards .cards {
+    width: 100%;
+    object-fit: contain;
+}
+
+.container .productos .consultas {
+    width: 80%;
+}
+
+
+/****************************
+ * PRODUCTOS RELACIONADOS *
+****************************/
+
+
+section.prod-relacionados {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+
+}
+
+.container .prod-relacionados .titulo {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15px 0px;
+    padding: 15px 0px;
+
+}
+
+.container .prod-relacionados h3#blanco {
+    color: white;
+}
+
+.container .prod-relacionados h3#naranja {
+    color: #E27F41;
+}
+
+.container .prod-relacionados .prod-rel {
+    width: 32.5%;
+    display: inline-flex;
+    justify-content: space-between;
+
+
+}
+
+.container .prod-relacionados .prod-rel img#prod-rel {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+
+}
+
+footer {
+    display: flex;
+    position: relative;
+
+}
+
+*************************** * MEDIAS QUERIES MAX 800PX * ***************************
+
+/*
+@media screen and (min-width: 700px) {
+
+
+    section.productos {
+        width: 500px;
+
+    }
+
+    .container .product {
+        position: relative;
+        width: 90%;
+
+
+    }
+    
+
+    .container .prod-relacionados .prod-rel {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+
+
+    }
+    .container .prod-relacionados .titulo {
+    display: block;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+}
+*/

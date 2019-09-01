@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400,400i,800,800i&display=swap');
+
+/* COLORES
+Naranja: #E27F41 / Amarillo: #EAB22A
+Gris Oscuro: #333333 / Gris Clarito: #F7F7F7  */
+* {
+	margin: 0 auto;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.max-width{max-width: 1440px;}
+.w-960{ max-width: 960px;}
+
+.bg-image{
+
+    width: 100%;
+    padding: 10px;
+    background-image: url("../img/black-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bg-image-white{
+
+    width: 100%;
+    background-image: url("../img/white-abstract-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+    color: #333;
+}
+a:hover {
+  color: #E27F41 !important
+}
+a.nav-link{ color: white}
+a.nav-link:hover{ color: white;}
+
+a.nav-link, .dropdown-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+
+
+.degrade{
+  background: rgba(209,209,209,1);
+  background: -moz-linear-gradient(top, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 64%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(209,209,209,1)), color-stop(64%, rgba(254,254,254,1)), color-stop(64%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+  background: -webkit-linear-gradient(top, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 64%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
+  background: -o-linear-gradient(top, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 64%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
+  background: -ms-linear-gradient(top, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 64%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
+  background: linear-gradient(to bottom, rgba(209,209,209,1) 0%, rgba(254,254,254,1) 64%, rgba(209,209,209,1) 64%, rgba(254,254,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#fefefe', GradientType=0 );
+}
+.border-bottom-orange {
+  border-bottom: 5px solid #E27F41;
+}
+
+.navbar-light .navbar-toggler {
+  color: #333333;
+  border-color: #333333;
+  background: #E27F41;
+}
+
+.dropdown-menu {
+  background: #333;
+  border: none;
+}
+
+.dropdown-menu a {
+  color: black;
+  font-size: small;
+}
+
+.boton-orange {
+  border: 1px solid orange;
+  background: #E27F41;
+}
+
+.content-orange {
+  background: #E27F41;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 0px;
+  font-weight: 300;
+}
+.centered-img img{
+ text-align: center;
+ margin: auto;
+}
+
+
+.form-control {
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+    width: 130px;
+    color: #495057;
+    background-color: #ffffff9e;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.centered-v{
+  /*position: relative;*/
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*_____________________MICROCLASES*/
+.color-white{ color: white !important;}
+.color-orange{ color: #E27F41 !important;}
+.bg-black{ background: #000 !important;}
+.bg-orange{ background: #E27F41;}
+
+.font-small{ font-size: small; font-weight: 300;}
+.inicio a.btn {background: #E27F41; color: white;}
+
+.banner-standard {
+  background-attachment: fixed;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border-bottom: 2px solid #E27F41;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.banner-texto-standard{
+  background: rgba(0,0,0,0.5);
+  padding: 30px 20px;
+  color: white;
+  align-items: center;
+  position: relative;
+  top: 40%;
+  width: 40%;
+}
+
+/*_____________________MOBILE LAST*/
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar-collapse {
+    background: #333;
+    padding: 5%;
+  }
+
+  .navbar-collapse a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+}
