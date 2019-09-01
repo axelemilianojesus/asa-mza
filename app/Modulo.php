@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Muni extends Model
+class Modulo extends Model
 {
     public $guarded=[];
 
@@ -16,6 +16,6 @@ class Muni extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'mapUrl'
+        'title', 'description', 'price','img'
     ];
 }

@@ -11,4 +11,15 @@ class Curso extends Model
     //public $timestamps=true; // se va en FALSE si se aclara sino no
     public $guarded=[]; // esto nos dice que columnas NO se puede escribir
     //public $fillable=; esto nos dice que columnas se pueden escribir
+
+    use Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title', 'description', 'price','discount','capacidad','img'
+    ];
 }
