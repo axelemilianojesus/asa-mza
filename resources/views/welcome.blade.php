@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    MODIFICAND EL INICIO
                 </div>
 
                 <div class="links">
