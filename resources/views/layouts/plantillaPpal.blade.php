@@ -29,7 +29,7 @@ $usuarioLogueado = traerUsuarioLogueado();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Personal CSS -->
-    <link rel="stylesheet" href="../../public/css/style-header.css">
+    <link rel="stylesheet" href="css/style-header.css">
     <!--Icono -->
     <link rel="shortcut icon" href="img/faviconasa.ico">
     <!--FontAwesome -->
@@ -39,11 +39,10 @@ $usuarioLogueado = traerUsuarioLogueado();
 
 <body>
     <header>
-        {{-- @yield ('header') --}}
-        {{-- @include('menu') --}}
+        @yield('menu')
     </header>
     <div class="slider">
-        @yield ('slider')
+        @yield('slider')
     </div>
 
 
@@ -59,7 +58,7 @@ $usuarioLogueado = traerUsuarioLogueado();
 				Porque nos interesa tu futuro, y queremos ayudarte a crecer. <br> Conocé los cursos que tenemos para ofrecerte
 			</p>
 			<p>
-				<a class="btn" href="#">Ver mas »</a>
+				<a class="btn" href="capacitacion.php">Ver mas »</a>
 			</p>
 		</div>
 
@@ -67,10 +66,10 @@ $usuarioLogueado = traerUsuarioLogueado();
 		<div class="col-md-6 muni">
 			<h2 class="bg-black color-white">MUNICIPALIDADES</h2>
 			<p>
-			Accedé a la guía completa de trámites por Municipalidades. <br> Además encontrarás un organigrama para ayudarte a completasr los trámites
+			Accedé a la guía completa de trámites por Municipalidades. <br> Además encontrarás un organigrama para ayudarte a completar los trámites
 			</p>
 			<p>
-				<a class="btn" href="#">Ver mas »</a>
+				<a class="btn" href="municipalidades.php">Ver mas »</a>
 			</p>
 		</div>
 	<div class="col-md-6 proyectos">
@@ -90,7 +89,7 @@ $usuarioLogueado = traerUsuarioLogueado();
 			  Somos una organización sin fines de lucro. Conocémos un poco mas.
 			</p>
 			<p>
-				<a class="btn" href="#">Ver mas »</a>
+				<a class="btn" href="quienes%20somos.php">Ver mas »</a>
 			</p>
 		</div>
 
@@ -118,7 +117,7 @@ $usuarioLogueado = traerUsuarioLogueado();
     </section>
 
     <footer>
-        @yield ('footer')
+      @yield('footer')
     </footer>
 
     <!-- Optional JavaScript -->
