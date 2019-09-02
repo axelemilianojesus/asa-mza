@@ -49,9 +49,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'name' => ['required', 'string', 'max:50'],
+            'lastName'=>['required', 'string', 'max:50'],
+            'userName'=>['required', 'string', 'min:6','max:50'],
+            'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'birthday'=> ['required','strtotime'],
+            'provincia'=>['required','string', 'max:50'],
+            'phone'=>['required','numeric'],
+            'level'=>['numeric'],
+            'avatar'=>['required','image'],
+            'cargo'=>['string','max:50']
         ]);
     }
 
@@ -63,10 +71,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // para guardar la img del avatar vamos a guardarla en public y la ruta la vamos a guardar en la BD
+      $route = $data['avatar'] -> store("public\img\avatar");
+
+      $fileName = basename($route);
+
+      // creamos el usuario
         return User::create([
             'name' => $data['name'],
+            'lastName'=> $data['lastName'],
+            'userName'=> $data['userName'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'birthday'=> $data['birthday'],
+            'provincia'=> $data['provincia'],
+            'phone'=> $data['phone'],
+            // 'level'=> $data['level'],
+            'avatar'=> $fileName, // aca solo guardamos la ruta de la img
+            // 'cargo'=> $data['cargo']
         ]);
     }
 }
