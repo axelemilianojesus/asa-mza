@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.plantilla')
 
 @section('content')
 <?php
@@ -36,6 +37,8 @@ if ($_POST) {
 
 }
  ?>
+@section('main')
+
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -61,9 +64,7 @@ if ($_POST) {
 
 <body class="forms" id="login">
 
-    <div class="menu">
-        @yield('menu')
-    </div>
+
 
     <section class="login m-0 py-5">
 
@@ -132,3 +133,4 @@ if ($_POST) {
 
         </div>
     </section>
+@endsection

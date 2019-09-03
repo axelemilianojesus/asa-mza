@@ -50,7 +50,11 @@ if ($_POST) {
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="shortcut icon" href="img/faviconasa.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>INGRESAR AL SITIO</title>
+ {{-- <title>INGRESAR AL SITIO</title>
+    @section('title')
+        Aca va el titulo
+    @endsection --}}
+
 </head>
 
 <body class="forms" id="login">

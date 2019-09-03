@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
-@section('content')
+@extends('layouts.plantilla')
+{{-- @section('content') --}}
 
 <?php
 $name ="";
@@ -38,58 +38,60 @@ $provincias=[
   "TU"=>"Tucuman"
 ];
 
- require_once("./../app/Http/Controllers/funciones.php");
+//  require_once("./../app/Http/Controllers/funciones.php");
+//
+// if(estaLogueado()){
+//   // header("location:inicio.php");exit;
+//   header("location:inicio.php");exit;
+// }
 
-if(estaLogueado()){
-  // header("location:inicio.php");exit;
-  header("location:inicio.php");exit;
-}
-
-if($_POST){
-
-
-  // mantenemos los datos en caso de error
-//     persistencia($_POST);
-
-        $name =$_POST["name"];
-        $lastName =$_POST["lastName"];
-        $userName =$_POST["userName"];
-        $date =$_POST["date"];
-        $prov =$_POST["prov"];
-        $email =$_POST["email"];
-        $phone =$_POST["phone"];
-        // $avatar =$_POST["avatar"];
-
-
-$existeMail = existeElEmail($_POST["email"]);
-
-if ($existeMail == false) {
-
-  $errores=validarRegistracion($_POST);
-
-  if(count($errores)== 0){
-   $usuario=armarUsuario($_POST);
-   //guarda usuario
-
-   guardarUsuario($usuario);
-
-   // loguear usuario
-   loguear($_POST["email"]);
-
-
-   // header("location:inicio.php");exit;
-   header("location:inicio.php");exit;
-  }
-} else {
-       $errores["email"] = "El mail que ingresaste ya está registrado";
-
-}
-
-
-
-}
+// if($_POST){
+//
+//
+//   // mantenemos los datos en caso de error
+// //     persistencia($_POST);
+//
+//         $name =$_POST["name"];
+//         $lastName =$_POST["lastName"];
+//         $userName =$_POST["userName"];
+//         $date =$_POST["date"];
+//         $prov =$_POST["prov"];
+//         $email =$_POST["email"];
+//         $phone =$_POST["phone"];
+//         // $avatar =$_POST["avatar"];
+//
+//
+// $existeMail = existeElEmail($_POST["email"]);
+//
+// if ($existeMail == false) {
+//
+//   $errores=validarRegistracion($_POST);
+//
+//   if(count($errores)== 0){
+//    $usuario=armarUsuario($_POST);
+//    //guarda usuario
+//
+//    guardarUsuario($usuario);
+//
+//    // loguear usuario
+//    loguear($_POST["email"]);
+//
+//
+//    // header("location:inicio.php");exit;
+//    header("location:inicio.php");exit;
+//   }
+// } else {
+//        $errores["email"] = "El mail que ingresaste ya está registrado";
+//
+// }
+//
+//
+//
+// }
 
  ?>
+@section('main')
+
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -121,11 +123,11 @@ if ($existeMail == false) {
     <section class="registro m-0 py-5" >
         <div class="container bg-white p-4" id="registro">
 
-            <form class="registro" action="{{ route('register') }}" method="post" enctype="multipart/form-data">
+          <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
               @csrf
                 <h1 class="forms"> Registrate</h1>
                 <div class="errores">
-                    <ul>
+                    {{-- <ul>
                         @if(isset($errores))
                         OOPS! algo salió mal:
                           @foreach ($errores as $error)
@@ -135,7 +137,7 @@ if ($existeMail == false) {
                         @endif
 
                     </ul>
-                </div>
+                </div> --}}
                 <div class="formLog" id="name">
                     <p class="info">Colocá tu nombre</p>
                     <i class="fas fa-user"></i>

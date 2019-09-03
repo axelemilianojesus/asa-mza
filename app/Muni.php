@@ -7,15 +7,4 @@ use Illuminate\Database\Eloquent\Model;
 class Muni extends Model
 {
     public $guarded=[];
-
-    use Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'mapUrl'
-    ];
 }

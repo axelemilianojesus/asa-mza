@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -37,7 +37,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        // $this->middleware('guest');
     }
 
     /**
@@ -49,16 +49,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'id'=>['unique:users'],
             'name' => ['required', 'string', 'max:50'],
             'lastName'=>['required', 'string', 'max:50'],
             'userName'=>['required', 'string', 'min:6','max:50'],
             'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'birthday'=> ['required','strtotime'],
+            'date'=> ['required','date'],
             'provincia'=>['required','string', 'max:50'],
             'phone'=>['required','numeric'],
             'level'=>['numeric'],
-            'avatar'=>['required','image'],
+            'avatar'=>['image'],
             'cargo'=>['string','max:50']
         ]);
     }
@@ -72,7 +73,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         // para guardar la img del avatar vamos a guardarla en public y la ruta la vamos a guardar en la BD
-      $route = $data['avatar'] -> store("public\img\avatar");
+      $route = $data["avatar"] -> store("public\img\avatar");
 
       $fileName = basename($route);
 
@@ -83,12 +84,12 @@ class RegisterController extends Controller
             'userName'=> $data['userName'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'birthday'=> $data['birthday'],
+            'birthday'=> $data['date'],
             'provincia'=> $data['provincia'],
             'phone'=> $data['phone'],
-            // 'level'=> $data['level'],
+            'level'=> $data['level'],
             'avatar'=> $fileName, // aca solo guardamos la ruta de la img
-            // 'cargo'=> $data['cargo']
+            'cargo'=> $data['cargo']
         ]);
     }
 }
