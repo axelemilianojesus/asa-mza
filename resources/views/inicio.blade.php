@@ -1,9 +1,10 @@
 @extends('layouts.plantilla')
 @section('css')
- <link rel="stylesheet" href="../../public/css/style-header.css">
-<!--<link rel="stylesheet" href="../../public/css/app.css">-->
- 
+ <link rel="stylesheet" href="../../css/style-header.css">
+
 @endsection
+
+
 @section('title')
 Inicio
 @endsection

@@ -1,16 +1,7 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 @extends('layouts.plantilla')
-{{-- @section('content') --}}
 
 <?php
-$name ="";
-$lastName ="";
-$userName ="";
-$date ="";
-$prov ="";
-$email ="";
-$phone ="";
-
 
 
 $provincias=[
@@ -38,87 +29,20 @@ $provincias=[
   "TU"=>"Tucuman"
 ];
 
-//  require_once("./../app/Http/Controllers/funciones.php");
-//
-// if(estaLogueado()){
-//   // header("location:inicio.php");exit;
-//   header("location:inicio.php");exit;
-// }
-
-// if($_POST){
-//
-//
-//   // mantenemos los datos en caso de error
-// //     persistencia($_POST);
-//
-//         $name =$_POST["name"];
-//         $lastName =$_POST["lastName"];
-//         $userName =$_POST["userName"];
-//         $date =$_POST["date"];
-//         $prov =$_POST["prov"];
-//         $email =$_POST["email"];
-//         $phone =$_POST["phone"];
-//         // $avatar =$_POST["avatar"];
-//
-//
-// $existeMail = existeElEmail($_POST["email"]);
-//
-// if ($existeMail == false) {
-//
-//   $errores=validarRegistracion($_POST);
-//
-//   if(count($errores)== 0){
-//    $usuario=armarUsuario($_POST);
-//    //guarda usuario
-//
-//    guardarUsuario($usuario);
-//
-//    // loguear usuario
-//    loguear($_POST["email"]);
-//
-//
-//    // header("location:inicio.php");exit;
-//    header("location:inicio.php");exit;
-//   }
-// } else {
-//        $errores["email"] = "El mail que ingresaste ya está registrado";
-//
-// }
-//
-//
-//
-// }
-
  ?>
+{{-- @section('main') --}}
+
+@section('css')
+  <link rel="stylesheet" href="css/stylesForms.css">
+@endsection
+
+@section('title')
+  Registro
+@endsection
+
 @section('main')
 
 
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Pragma" content="no-cache">
-
-    <!-- HOJAS DE STILOS-->
-
-    <link rel="stylesheet" href="css/stylesForms.css">
-
-
-    <!--FUENTES E ICONOS-->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/faviconasa.ico">
-    <title>Registro</title>
-</head>
-
-{{-- <body class="forms" id="registro">
-    <div class="menu">
-        @yield('menu')
-    </div> --}}
 
     <section class="registro m-0 py-5" >
         <div class="container bg-white p-4" id="registro">

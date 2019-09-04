@@ -76,9 +76,9 @@ class RegisterController extends Controller
       $route = $data["avatar"] -> store("public\img\avatar");
 
       $fileName = basename($route);
-
+  dd($fileName);
       // creamos el usuario
-        return User::create([
+        $user= User::create([
             'name' => $data['name'],
             'lastName'=> $data['lastName'],
             'userName'=> $data['userName'],
@@ -91,5 +91,7 @@ class RegisterController extends Controller
             'avatar'=> $fileName, // aca solo guardamos la ruta de la img
             'cargo'=> $data['cargo']
         ]);
+        dd($user);
+        return $user;
     }
 }
