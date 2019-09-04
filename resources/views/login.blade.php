@@ -2,7 +2,7 @@
 @extends('layouts.plantilla')
 
 @section('css')
-  <link rel="stylesheet" href="css/stylesForms.css">
+  <link rel="stylesheet" href="../../css/stylesForms.css">
 @endsection
 
 @section('title')
