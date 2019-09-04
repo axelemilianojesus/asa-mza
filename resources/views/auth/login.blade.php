@@ -1,66 +1,15 @@
-@extends('layouts.app')
+
 @extends('layouts.plantilla')
 
-@section('content')
-<?php
-$email="";
-//session_start();
-require_once("./../app/Http/Controllers/funciones.php");
+@section('css')
+  <link rel="stylesheet" href="../../css/stylesForms.css">
+@endsection
 
-if (estaLogueado()) {
+@section('title')
+  Ingresar al Sitio
+@endsection
 
-  // header ("location:inicio.php");exit;
-  header ("location:/welcome");exit;
-}
-
-if ($_POST) {
-  $email=$_POST["email"];
-  $errores = validarLogin($_POST);
-
-  if (count($errores) == 0) {
-    loguear($_POST["email"]);
-    // header("location:inicio.php");exit;
-    header("location:/login"); exit;
-
-  } else {
-    foreach ($errores as $error) {
-      // echo $error . "<br>";
-      if ($error == "Usuario no registrado") { //este if nos lleva al registro.php para crear un nuevo usuario
-
-        // header("location:registro.php");exit;
-        header("location:
-        /register");exit;
-
-      }
-      }
-    }
-
-}
- ?>
 @section('main')
-
-
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Pragma" content="no-cache">
-
-    <!-- HOJAS DE STILOS-->
-
-    <link rel="stylesheet" href="css/stylesForms.css">
-
-
-    <!--FUENTES E ICONOS-->
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link rel="shortcut icon" href="img/faviconasa.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <title>INGRESAR AL SITIO</title>
-</head>
 
 <body class="forms" id="login">
 

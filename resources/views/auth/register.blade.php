@@ -1,4 +1,4 @@
-{{-- @extends('layouts.app') --}}
+
 @extends('layouts.plantilla')
 
 <?php
@@ -30,10 +30,8 @@ $provincias=[
 ];
 
  ?>
-{{-- @section('main') --}}
-
 @section('css')
-  <link rel="stylesheet" href="css/stylesForms.css">
+  <link rel="stylesheet" href="../../css/stylesForms.css">
 @endsection
 
 @section('title')

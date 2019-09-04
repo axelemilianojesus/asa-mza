@@ -1,67 +1,19 @@
-<?php
-$email="";
-//session_start();
-require_once("funciones.php");
 
-if (estaLogueado()) {
+@extends('layouts.plantilla')
 
-  header ("location:inicio.php");exit;
-}
+@section('css')
+  <link rel="stylesheet" href="../../css/stylesForms.css">
+@endsection
 
-if ($_POST) {
-  $email=$_POST["email"];
-  $errores = validarLogin($_POST);
+@section('title')
+  Ingresar al Sitio
+@endsection
 
-  if (count($errores) == 0) {
-    loguear($_POST["email"]);
-    header("location:inicio.php");exit;
-    // header("location:login.php"); exit;
-
-  } else {
-    foreach ($errores as $error) {
-      // echo $error . "<br>";
-      if ($error == "Usuario no registrado") { //este if nos lleva al registro.php para crear un nuevo usuario
-
-        header("location:registro.php");exit;
-
-      }
-      }
-    }
-
-}
- ?>
-
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Pragma" content="no-cache">
-
-    <!-- HOJAS DE STILOS-->
-
-    <link rel="stylesheet" href="css/stylesForms.css">
-
-
-    <!--FUENTES E ICONOS-->
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link rel="shortcut icon" href="img/faviconasa.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
- {{-- <title>INGRESAR AL SITIO</title>
-    @section('title')
-        Aca va el titulo
-    @endsection --}}
-
-</head>
+@section('main')
 
 <body class="forms" id="login">
 
-    <div class="menu">
-        <?php include_once ("header.php") ?>
-    </div>
+
 
     <section class="login m-0 py-5">
 
@@ -71,25 +23,28 @@ if ($_POST) {
             <h1 class="forms">Bienvenido a</h1>
             <img class="logo" src="img/asalogo.png" alt="">
 
-            <form class="login" action="login.php" method="post">
+            <form class="login" action="{{ route('login') }}" method="post">
+              @csrf
                 <h1 class="forms">Ingresar</h1>
 
                     <div class="errores">
                         <ul>
-                            <?php if (isset($errores)): ?>
+                            @if (isset($errores))
                             OOPS! algo salió mal:
-                            <?php foreach ($errores as $error): ?>
-                            <li><?php echo $error; ?></li>
-                            <?php endforeach; ?>
+                            @foreach ($errores as $error): ?>
+                            <li>{{ $error }}</li>
+                            @endforeach
                             Por favor verificá los datos y volvé a intentarlo.
-                            <?php endif; ?>
+                          @endif
+
+
 
                         </ul>
                     </div>
                     <div class="formLog" id="email">
                         <p class="info">Ingresá tu correo electrónico</p>
                         <i class="fas fa-at"></i>
-                        <input type="email" name="email" placeholder="ejemplo@correo.com" value="<?= $email; ?>" autofocus required>
+                        <input type="email" name="email" placeholder="ejemplo@correo.com" value="{{old( 'email' )}}" autofocus required>
                     </div>
 
                     <div class="formLog" id="password">
@@ -98,15 +53,27 @@ if ($_POST) {
                         <input type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
                     </div>
 
-                    <button class="form" type="submit" name="button">Entrar</button>
+                    <button class="form" type="submit" name="button">{{ __('Entrar') }}</button>
+
+                    @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Olvidé mi contraseña!') }}
+                        </a>
+                    @endif
 
                     <div class="formLog" id="recordar">
 
-                        <input type="checkbox" class="chkbx"> Recuerdame. <br>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                          <label class="form-check-label" for="remember">
+                              {{ __('Recuerdame') }}
+                          </label>
+                      </div>
 
                         <p class="formLog">Al ingresar aceptas nuestras políticas de uso.</p><br>
 
-                        <p class="formLog">Si todavía no estás registrado <a href="registro.php" class="formLog">presiona aquí</a></p>
+                        <p class="formLog">Si todavía no estás registrado <a href="/register" class="formLog">presiona aquí</a></p>
 
                     </div>
 
@@ -115,11 +82,4 @@ if ($_POST) {
 
         </div>
     </section>
-
-    <footer>
-        <?php include_once("footer.php") ?>
-    </footer>
-
-</body>
-
-</html>
+@endsection
