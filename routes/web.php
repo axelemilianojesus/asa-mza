@@ -11,15 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "HomeController@home");
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/index', 'HomeController@index')->name('home');
-
+// Route::get('/register', 'RegisterController@create');
+// Route::post('/register', 'RegisterController@create');
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +31,7 @@ Route::get('/index', 'HomeController@index')->name('home');
 | MUNI CONTROLLER
 |--------------------------------------------------------------------------
 */
-
+Route::get('/municipalidades', 'MuniController@all');
 /*
 |--------------------------------------------------------------------------
 | CURSO CONTROLLER
@@ -42,6 +40,8 @@ Route::get('/index', 'HomeController@index')->name('home');
 
 /*
 |--------------------------------------------------------------------------
-| CONTROLLER
+|TRAMITES CONTROLLER
 |--------------------------------------------------------------------------
 */
+
+Route::get('/tramites/{id}', 'TramiteController@all');

@@ -1,73 +1,85 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+@extends('layouts.plantilla')
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+@section('css')
+  <link rel="stylesheet" href="../../css/stylesForms.css">
+@endsection
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+@section('title')
+  Ingresar al Sitio
+@endsection
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+@section('main')
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+<body class="forms" id="login">
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+    <section class="login m-0 py-5">
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container bg-white p-4">
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
+            <h1 class="forms">Bienvenido a</h1>
+            <img class="logo" src="img/asalogo.png" alt="">
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <form class="login" action="{{ route('login') }}" method="post">
+              @csrf
+                <h1 class="forms">Ingresar</h1>
+
+                    <div class="errores">
+                        <ul>
+                            @if (isset($errores))
+                            OOPS! algo salió mal:
+                            @foreach ($errores as $error): ?>
+                            <li>{{ $error }}</li>
+                            @endforeach
+                            Por favor verificá los datos y volvé a intentarlo.
+                          @endif
+
+
+
+                        </ul>
+                    </div>
+                    <div class="formLog" id="email">
+                        <p class="info">Ingresá tu correo electrónico</p>
+                        <i class="fas fa-at"></i>
+                        <input type="email" name="email" placeholder="ejemplo@correo.com" value="{{old( 'email' )}}" autofocus required>
+                    </div>
+
+                    <div class="formLog" id="password">
+                        <p class="info">Ingresá tu contraseña</p>
+                        <i class="fas fa-key"></i>
+                        <input type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
+                    </div>
+
+                    <button class="form" type="submit" name="button">{{ __('Entrar') }}</button>
+
+                    @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Olvidé mi contraseña!') }}
+                        </a>
+                    @endif
+
+                    <div class="formLog" id="recordar">
+
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                          <label class="form-check-label" for="remember">
+                              {{ __('Recuerdame') }}
+                          </label>
+                      </div>
+
+                        <p class="formLog">Al ingresar aceptas nuestras políticas de uso.</p><br>
+
+                        <p class="formLog">Si todavía no estás registrado <a href="/register" class="formLog">presiona aquí</a></p>
+
+                    </div>
+
+            </form>
+
+
         </div>
-    </div>
-</div>
+    </section>
 @endsection
