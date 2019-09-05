@@ -31,7 +31,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 | MUNI CONTROLLER
 |--------------------------------------------------------------------------
 */
-
+Route::get('/municipalidades', 'MuniController@all');
 /*
 |--------------------------------------------------------------------------
 | CURSO CONTROLLER
@@ -40,6 +40,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /*
 |--------------------------------------------------------------------------
-| CONTROLLER
+|TRAMITES CONTROLLER
 |--------------------------------------------------------------------------
 */
+
+Route::get('/tramites/{id}', 'TramiteController@all');
