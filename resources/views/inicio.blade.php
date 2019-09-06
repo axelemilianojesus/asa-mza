@@ -45,7 +45,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">MUNICIPALIDADES</h5>
                         <p>Accedé a la guía completa de tramites por municipios. Además podés descargar toda la documentación necesaria desde aquí.</p>
-                        <a class="btn" href="municipalidades.php">Ver mas »</a>
+                        <a class="btn" href="/municipalidades">Ver mas »</a>
                     </div>
                 </div>
 
@@ -107,7 +107,26 @@ Inicio
                 </p>
             </div>
 
+            <div class="col-md-6 proyectos">
+                <h2 class="bg-orange color-white">TRAMITES ONLINE</h2>
+                <p>
+                    Podés acceder desde aca al Colegio de Arquitectos  <br> o a la Caja previsional.
+                </p>
+                <p>
+                    <a class="btn" href="/tramites/tramites-online">Ver mas »</a>
+                </p>
+            </div>
 
+
+            <div class="col-md-6 nosotros">
+                <h2 class="bg-black color-white">NOTICIAS</h2>
+                <p>
+                    Enterate de las ultimas novedades. Mirá las ultimas noticias.
+                </p>
+                <p>
+                    <a class="btn" href="#">Ver mas »</a>
+                </p>
+            </div>
 
 
         </div>

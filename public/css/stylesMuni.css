@@ -45,7 +45,9 @@ section :hover{  /*Color naranja del cursor cuando se posa en el nombre de cada 
 .seccionesmuni h2{  /*Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni */
   cursor: pointer;
 }
-
+.seccionesmuni h2 a{
+  text-decoration: none;
+}
 /* Correspondiente a la caja contenedora de cada municipalidad, ej "Capital" */
 
 .seccionesmuni {

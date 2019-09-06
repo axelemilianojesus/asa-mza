@@ -9,4 +9,12 @@ class HomeController extends Controller
     public function home(){
       return view('inicio');
     }
+
+    public function working(){
+      return view('working');
+    }
+
+    public function admin(){
+      return view('admin');
+    }
 }

@@ -18,7 +18,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/register', 'RegisterController@create');
 // Route::post('/register', 'RegisterController@create');
-
+Route::get('/working','HomeController@working');
+route::get('/admin','HomeController@admin');
 /*
 |--------------------------------------------------------------------------
 | USER CONTROLLER
@@ -45,3 +46,4 @@ Route::get('/municipalidades', 'MuniController@all');
 */
 
 Route::get('/tramites/{id}', 'TramiteController@all');
+Route::get('/tramites-online', 'TramiteController@online');

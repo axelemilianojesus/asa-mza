@@ -51,44 +51,50 @@
                       <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%>
 
                   </label>
-                  {{-- @else
-                  <label>
-                      Bienvenido invitado
-                  </label> --}}
+
                   @endif
               </div>
 
           </div>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom-orange">
-          <a class="navbar-brand" href="/inicio"><img src="img/asalogo.png" alt="asa" width="100px"></a>
+          <a class="navbar-brand" href="/"><img src="img/asalogo.png" alt="asa" width="100px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-0">
-                  <!--<li class="nav-item active">
-                      <a class="nav-link" href="inicio.php">Inicio <span class="sr-only">(current)</span></a>
-                  </li> -->
+                {{-- @if (Auth::check())
+                  @if (Auth::user()->level === 1) --}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/admin">Administración <span class="sr-only">(current)</span></a>
+                    </li>
+                  {{-- @endif
+                @endif --}}
 
                   <li class="nav-item active">
-                      <a class="nav-link" "capa-destacado" href="capacitacion.php">Capacitaciones<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" "capa-destacado" href="/capacitaciones">Capacitaciones<span class="sr-only">(current)</span></a>
                   </li>
 
                   <li class="nav-item">
-                      <a class="nav-link" href="working.php">Proyectos</a>
+                      <a class="nav-link" href="/working">Proyectos</a>
                   </li>
-                  <li class="nav-item dropdown">
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="/tramites-online">Tramites Online</a>
+                  </li>
+                  {{-- <li class="nav-item dropdown">
+
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Tramites Online
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      </a> --}}
+                      {{-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="servicios.php">Servicios 1</a>
                           <a class="dropdown-item" href="working.php">Servicios 2</a>
                           <!--<div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>-->
-                      </div>
+                      </div> --}}
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="quienes%20somos.php" tabindex="-1">Nosotros</a>
