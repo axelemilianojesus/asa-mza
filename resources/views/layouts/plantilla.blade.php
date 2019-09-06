@@ -91,14 +91,14 @@
                       </div>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="quienes%20somos.php" tabindex="-1">Nosotros</a>
+                      <a class="nav-link" href="/nosotros">Nosotros</a>
                   </li>
 
                   <li class="nav-item">
                       <a class="nav-link" href="/municipalidades">Municipalidades</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="preguntasFrecuentes.php">F.A.Qs</a>
+                      <a class="nav-link" href="/preguntasfrecuentes">F.A.Qs</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="contacto.php">Contáctenos</a>

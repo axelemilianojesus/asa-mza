@@ -45,3 +45,15 @@ Route::get('/municipalidades', 'MuniController@all');
 */
 
 Route::get('/tramites/{id}', 'TramiteController@all');
+/*
+|--------------------------------------------------------------------------
+| NOSOTROS CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/nosotros','NosotrosController@nosotros');
+/*
+|--------------------------------------------------------------------------
+| PREGUNTAS FRECUENTES
+|--------------------------------------------------------------------------
+*/
+Route::get('/preguntasfrecuentes','PreguntasController@preguntas');
