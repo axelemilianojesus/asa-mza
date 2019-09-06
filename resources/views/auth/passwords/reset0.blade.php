@@ -1,17 +1,15 @@
-@extends('layouts.plantilla')
-
-@section('css')
-  <link rel="stylesheet" href="../../css/stylesForms.css">
-@endsection
-
+@extends('layouts.app')
 @section('title')
-  Esto es restaurar contrase~,na
+password update  
 @endsection
-
-
 @section('content')
-  <section class="registro m-0 py-5" >
-      <div class="container bg-white p-4" id="registro">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Reset Password') }}</div>
+
+                <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
@@ -62,6 +60,8 @@
                         </div>
                     </form>
                 </div>
-            </section>
-
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
