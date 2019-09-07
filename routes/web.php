@@ -56,7 +56,19 @@ Route::get('/tramites-online', 'TramiteController@online');
 Route::get('/nosotros','NosotrosController@nosotros');
 /*
 |--------------------------------------------------------------------------
-| PREGUNTAS FRECUENTES
+| PREGUNTAS FRECUENTES CONTROLLER
 |--------------------------------------------------------------------------
 */
 Route::get('/preguntasfrecuentes','PreguntasController@preguntas');
+/*
+|--------------------------------------------------------------------------
+| CAPACITACIONES CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/capacitaciones','CapacitacionesController@capacitaciones');
+/*
+|--------------------------------------------------------------------------
+| CONTACTOS CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/contactos','ContactosController@contactos');
