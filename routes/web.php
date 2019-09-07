@@ -36,10 +36,10 @@ Route::get('/municipalidades', 'MuniController@all');
 Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los tramites por muni
 /*
 |--------------------------------------------------------------------------
-| CURSO CONTROLLER
+| NOSOTROS  CONTROLLER
 |--------------------------------------------------------------------------
 */
-
+  Route::get('/nosotros','NosotrosController@nosotros');
 /*
 |--------------------------------------------------------------------------
 |TRAMITES CONTROLLER
@@ -50,3 +50,23 @@ Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los 
 // Route::get('/tramites/{id}', 'TramiteController@find');
 Route::get('/tramites-online', 'TramiteController@online');
 Route::get('/tramites/agregar-tramite','TramiteController@agregar'); // ->middleware("Auth");
+
+/*
+|--------------------------------------------------------------------------
+| PREGUNTAS FRECUENTES CONTROLLER
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/preguntasfrecuentes','PreguntasController@preguntas');
+/*
+|--------------------------------------------------------------------------
+| CAPACITACIONES CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/capacitaciones','CapacitacionesController@capacitaciones');
+/*
+|--------------------------------------------------------------------------
+| CONTACTOS CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/contactos','ContactosController@contactos');
