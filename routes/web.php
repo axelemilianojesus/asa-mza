@@ -19,7 +19,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/register', 'RegisterController@create');
 // Route::post('/register', 'RegisterController@create');
 Route::get('/working','HomeController@working');
-route::get('/admin','HomeController@admin');
+route::get('/admin','HomeController@admin');// ->middleware("Auth");
 /*
 |--------------------------------------------------------------------------
 | USER CONTROLLER
@@ -33,6 +33,7 @@ route::get('/admin','HomeController@admin');
 |--------------------------------------------------------------------------
 */
 Route::get('/municipalidades', 'MuniController@all');
+Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los tramites por muni
 /*
 |--------------------------------------------------------------------------
 | CURSO CONTROLLER
@@ -45,30 +46,7 @@ Route::get('/municipalidades', 'MuniController@all');
 |--------------------------------------------------------------------------
 */
 
-Route::get('/tramites/{id}', 'TramiteController@all');
+// Route::get('/tramites/{id}', 'TramiteController@all');
+// Route::get('/tramites/{id}', 'TramiteController@find');
 Route::get('/tramites-online', 'TramiteController@online');
-
-/*
-|--------------------------------------------------------------------------
-| NOSOTROS CONTROLLER
-|--------------------------------------------------------------------------
-*/
-Route::get('/nosotros','NosotrosController@nosotros');
-/*
-|--------------------------------------------------------------------------
-| PREGUNTAS FRECUENTES CONTROLLER
-|--------------------------------------------------------------------------
-*/
-Route::get('/preguntasfrecuentes','PreguntasController@preguntas');
-/*
-|--------------------------------------------------------------------------
-| CAPACITACIONES CONTROLLER
-|--------------------------------------------------------------------------
-*/
-Route::get('/capacitaciones','CapacitacionesController@capacitaciones');
-/*
-|--------------------------------------------------------------------------
-| CONTACTOS CONTROLLER
-|--------------------------------------------------------------------------
-*/
-Route::get('/contactos','ContactosController@contactos');
+Route::get('/tramites/agregar-tramite','TramiteController@agregar'); // ->middleware("Auth");
