@@ -83,7 +83,7 @@ Inicio
                     Accedé a la guía completa de trámites por Municipalidades. <br> Además encontrarás un organigrama para ayudarte a completar los trámites
                 </p>
                 <p>
-                    <a class="btn" href="municipalidades.php">Ver mas »</a>
+                    <a class="btn" href="/municipalidades">Ver mas »</a>
                 </p>
             </div>
             <div class="col-md-6 proyectos">

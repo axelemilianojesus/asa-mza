@@ -59,7 +59,7 @@ class RegisterController extends Controller
             'provincia'=>['required','string', 'max:50'],
             'phone'=>['required','numeric'],
             'level'=>['numeric'],
-            'avatar'=>['image'],
+            'avatar'=>['image'],-
             'cargo'=>['string','max:50']
         ]);
     }

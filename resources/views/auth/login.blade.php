@@ -27,30 +27,17 @@
               @csrf
                 <h1 class="forms">Ingresar</h1>
 
-                    <div class="errores">
-                        <ul>
-                            @if (isset($errores))
-                            OOPS! algo salió mal:
-                            @foreach ($errores as $error): ?>
-                            <li>{{ $error }}</li>
-                            @endforeach
-                            Por favor verificá los datos y volvé a intentarlo.
-                          @endif
 
-
-
-                        </ul>
-                    </div>
                     <div class="formLog" id="email">
                         <p class="info">Ingresá tu correo electrónico</p>
                         <i class="fas fa-at"></i>
-                        <input type="email" name="email" placeholder="ejemplo@correo.com" value="{{old( 'email' )}}" autofocus required>
+                        <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" value="{{old( 'email' )}}" autofocus required>
                     </div>
 
                     <div class="formLog" id="password">
                         <p class="info">Ingresá tu contraseña</p>
                         <i class="fas fa-key"></i>
-                        <input type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
+                        <input id="password" type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
                     </div>
 
                     <button class="form" type="submit" name="button">{{ __('Entrar') }}</button>
