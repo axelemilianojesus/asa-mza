@@ -23,6 +23,7 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+
     /**
      * Where to redirect users after registration.
      *
@@ -59,8 +60,8 @@ class RegisterController extends Controller
             'provincia'=>['required','string', 'max:50'],
             'phone'=>['required','numeric'],
             'level'=>['numeric'],
-            'avatar'=>['image'],-
-            'cargo'=>['string','max:50']
+            'avatar'=>['image']
+            //'cargo'=>['string','max:50']
         ]);
     }
 
@@ -88,8 +89,8 @@ class RegisterController extends Controller
             'provincia'=> $data['provincia'],
             'phone'=> $data['phone'],
             'level'=> $data['level'],
-            'avatar'=> $fileName, // aca solo guardamos la ruta de la img
-            'cargo'=> $data['cargo']
+            'avatar'=> $fileName // aca solo guardamos la ruta de la img
+            //'cargo'=> $data['cargo']
         ]);
         dd($user);
         return $user;
