@@ -107,7 +107,7 @@
                       <a class="nav-link" href="/preguntasfrecuentes">F.A.Qs</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="contacto.php">Contáctenos</a>
+                      <a class="nav-link" href="/contactos">Contáctenos</a>
                   </li>
 
 
