@@ -74,10 +74,10 @@ section.comite {
    display: block;
    justify-content: center;
 }
-article {
+/* article {
    display: flex;
    justify-content: center;
-}
+} */
 section.titulo h1.blanco,
 section.titulo h2.blanco {
    background-color: #333333;
