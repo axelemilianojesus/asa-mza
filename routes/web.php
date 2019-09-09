@@ -11,41 +11,26 @@
 |
 */
 
-Route::get('/', "HomeController@home");
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+ Route::get('/', 'HomeController@index')->name('inicio');
 // Route::get('/register', 'RegisterController@create');
 // Route::post('/register', 'RegisterController@create');
 Route::get('/working','HomeController@working');
-route::get('/admin','HomeController@admin');// ->middleware("Auth");
+Route::get('/admin','HomeController@admin');// ->middleware("Auth");
 /*
 |--------------------------------------------------------------------------
 | USER CONTROLLER
-|--------------------------------------------------------------------------
-*/
 
-
-/*
-|--------------------------------------------------------------------------
-| MUNI CONTROLLER
 |--------------------------------------------------------------------------
 */
 Route::get('/municipalidades', 'MuniController@all');
 Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los tramites por muni
 /*
 |--------------------------------------------------------------------------
-| NOSOTROS  CONTROLLER
-|--------------------------------------------------------------------------
-*/
-  Route::get('/nosotros','NosotrosController@nosotros');
-/*
-|--------------------------------------------------------------------------
-|TRAMITES CONTROLLER
+| TRAMITES CONTROLLER
 |--------------------------------------------------------------------------
 */
 
+Route::get('/tramites/{id}', 'TramiteController@all');
 // Route::get('/tramites/{id}', 'TramiteController@all');
 // Route::get('/tramites/{id}', 'TramiteController@find');
 Route::get('/tramites-online', 'TramiteController@online');
@@ -53,10 +38,15 @@ Route::get('/tramites/agregar-tramite','TramiteController@agregar'); // ->middle
 
 /*
 |--------------------------------------------------------------------------
+| NOSOTROS CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/nosotros','NosotrosController@nosotros');
+/*
+|--------------------------------------------------------------------------
 | PREGUNTAS FRECUENTES CONTROLLER
 |--------------------------------------------------------------------------
 */
-
 Route::get('/preguntasfrecuentes','PreguntasController@preguntas');
 /*
 |--------------------------------------------------------------------------
