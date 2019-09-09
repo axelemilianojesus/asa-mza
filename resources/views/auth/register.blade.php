@@ -19,7 +19,7 @@
                   <div class="formLog" id="name">
                       <p class="info">Colocá tu nombre</p>
                       <i class="fas fa-user"></i>
-                      <input class=" @error('name') is-invalid @enderror" type="text" name="name" placeholder="Nombre " value="{{ old('name') }}" autofocus required>
+                      <input id="name" class=" @error('name') is-invalid @enderror" type="text" name="name" placeholder="Nombre " value="{{ old('name') }}" autofocus required>
                       @error('name')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -29,18 +29,18 @@
                   <div class="formLog" id="lastName">
                       <p class="info">Colocá tu apellido</p>
                       <i class="fas fa-user"></i>
-                      <input class=" @error('lastName') is-invalid @enderror" type="text" name="lastName" placeholder=" Apellido " value="{{ old('lastName') }}" autofocus required>
+                      <input id="lastName" class=" @error('lastName') is-invalid @enderror" type="text" name="lastName" placeholder=" Apellido " value="{{ old('lastName') }}" autofocus required>
                       @error('lastName')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                           </span>
                       @enderror
                   </div>
-            
+
                   <div class="formLog" id="email">
                       <p class="info">Ingresá tu correo electrónico</p>
                       <i class="fas fa-at"></i>
-                      <input class=" @error('email') is-invalid @enderror"  type="email" name="email" placeholder="ejemplo@correo.com" value="{{ old('email') }}" autofocus required>
+                      <input id="email" class=" @error('email') is-invalid @enderror"  type="email" name="email" placeholder="ejemplo@correo.com" value="{{ old('email') }}" autofocus required>
                       @error('email')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -50,7 +50,7 @@
                   <div class="formLog" id="password">
                       <p class="info">Tu contraseña debe contener: mayúsculas, minúsculas y números</p>
                       <i class="fas fa-key"></i>
-                      <input class=" @error('password') is-invalid @enderror"  type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
+                      <input id="password" class=" @error('password') is-invalid @enderror"  type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
                       @error('password')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -60,12 +60,12 @@
                   <div class="formLog" id="password">
                       <p class="info">Tu contraseña debe contener: mayúsculas, minúsculas y numeros</p>
                       <i class="fas fa-key"></i>
-                      <input type="password" name="password1" placeholder="Repite tu contraseña" autofocus required>
+                      <input id="password" type="password" name="password1" placeholder="Repite tu contraseña" autofocus required>
                   </div>
                   <div class="formLog" id="avatar">
                       <p class="info">Podés elegir tu avatar</p>
                       <i class="fas fa-image" id="avatar"></i>
-                      <input class="file @error('avatar') is-invalid @enderror" type="file" name="avatar" value= "{{ old('file') }}">
+                      <input id="avatar" class="file @error('avatar') is-invalid @enderror" type="file" name="avatar" value= "{{ old('file') }}">
                       @error('avatar')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>

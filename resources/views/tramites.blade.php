@@ -7,6 +7,7 @@
 
 @section('title')
 Tramites de {{$muni->name}}
+
 @endsection
 
 
@@ -35,6 +36,5 @@ Tramites de {{$muni->name}}
           </section>
 
       </div>
-
   </div>
 @endsection

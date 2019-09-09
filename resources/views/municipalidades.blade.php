@@ -20,10 +20,9 @@ Municipalidades
         @foreach ($munis as $muni)
 
           <section class="seccionesmuni">
-            <button class="boton" type="submit" name="{{$muni->name}}">
-              <h2><a href="/municipalidades/{{$muni->id}}">{{$muni->name}}</a></h2>
+            <button class="boton" type="submit" name="capital">
+              <h2><a href="/tramites/{{$muni->id}}">{{$muni->name}}</a></h2>
             </button>
-
           </section>
 
         @endforeach
