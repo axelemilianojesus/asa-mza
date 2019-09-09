@@ -97,7 +97,7 @@
                       </div> --}}
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/nosotros">Nosotros</a>
+                      <a class="nav-link" href="/nosotros" tabindex="-1">Nosotros</a>
                   </li>
 
                   <li class="nav-item">
