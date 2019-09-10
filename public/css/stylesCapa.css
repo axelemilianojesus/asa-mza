@@ -8,6 +8,8 @@ body.capacitacion {
     font-family: "Montserrat", sans-serif;
 
 }
+.bg-capacitaciones{background-image: url("../img/capacitaciones/capacitaciones.jpg");}
+
 
 div.menu {
     width: 100%;
@@ -268,7 +270,7 @@ footer {
 
 
     }
-    
+
 
     .container .prod-relacionados .prod-rel {
         width: 100%;
