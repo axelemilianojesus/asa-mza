@@ -1,13 +1,10 @@
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
-// use App\Tramite;
-
+use App\Muni;
 class Tramite extends Model
 {
-
+  public $guarded=[];
       public function muni() {
         return $this->belongsTo("App\Muni", "muni_id");
       }
