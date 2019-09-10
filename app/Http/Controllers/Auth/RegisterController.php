@@ -56,3 +56,33 @@ class RegisterController extends Controller
             'cargo'=>['string','max:50']
         ]);
     }
+    /**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array  $data
+     * @return \App\User
+     */
+    protected function create(array $data)
+    {
+        // para guardar la img del avatar vamos a guardarla en public y la ruta la vamos a guardar en la BD
+      $route = $data["avatar"] -> store("public\img\avatar");
+      $fileName = basename($route);
+  dd($fileName);
+      // creamos el usuario
+        $user= User::create([
+            'name' => $data['name'],
+            'lastName'=> $data['lastName'],
+            'userName'=> $data['userName'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'birthday'=> $data['date'],
+            'provincia'=> $data['provincia'],
+            'phone'=> $data['phone'],
+            'level'=> $data['level'],
+            'avatar'=> $fileName, // aca solo guardamos la ruta de la img
+            'cargo'=> $data['cargo']
+        ]);
+        dd($user);
+        return $user;
+    }
+}

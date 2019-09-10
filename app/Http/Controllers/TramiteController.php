@@ -16,7 +16,9 @@ class TramiteController extends Controller
     }
     public function find($id){
       $tramites = Tramite::find($id);
-      return view('tramites',compact('tramites'));
+      $munis = Muni::find($id);
+      $vac=compact('tramites','munis');
+      return view('tramites',$vac);
     }
     public function agregar(){
       $munis = Muni::all();
