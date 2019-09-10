@@ -1,7 +1,7 @@
 <?php
 namespace App;
 use Illuminate\Database\Eloquent\Model;
-// use App\Tramite;
+use App\Muni;
 class Tramite extends Model
 {
   public $guarded=[];
