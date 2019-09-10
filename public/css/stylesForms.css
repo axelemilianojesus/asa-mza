@@ -30,7 +30,7 @@ section.registro {
 
 
 div.container {
-    width: 320px;
+    width: 90%;
     padding: 3px;
     flex-wrap: wrap;
     border: 1px solid #E27F41;
@@ -157,7 +157,7 @@ button.perfil {
 
 button:hover,
 button.perfil:hover {
-    background: cadetblue;
+    background: orange;
 }
 
 div.formLog#recordar {
@@ -228,7 +228,7 @@ a.formLog:hover {
     }
 
     div.container {
-        width: 350px;
+        width: 450px;
         padding: 3px;
         flex-wrap: wrap;
         border: 1px solid #E27F41;
