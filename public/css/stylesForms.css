@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -213,10 +213,10 @@ a.formLog:hover {
 
 
 @media screen and (min-width: 700px) {
-    body {
+    /* body {
         font-family: sans-serif;
         margin: 0 auto;
-    }
+    } */
 
     section.perfil,
     section.login,
