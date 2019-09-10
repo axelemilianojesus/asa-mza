@@ -58,9 +58,9 @@
                       @enderror
                   </div>
                   <div class="formLog" id="password">
-                      <p class="info">Tu contraseña debe contener: mayúsculas, minúsculas y numeros</p>
+                      <p class="info">Repetí tu contraseña</p>
                       <i class="fas fa-key"></i>
-                      <input id="password" type="password" name="password1" placeholder="Repite tu contraseña" autofocus required>
+                      <input id="passwordRepeat" type="password" name="password1" placeholder="Repite tu contraseña" autofocus required>
                   </div>
                   <div class="formLog" id="avatar">
                       <p class="info">Podés elegir tu avatar</p>

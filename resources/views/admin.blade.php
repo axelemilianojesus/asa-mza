@@ -21,7 +21,7 @@ Administración
                     Gestioná las capacitaciones desde aqui
                   </p>
                   <p>
-                      <a class="btn" href="#">Acceder</a>
+                      <a class="btn" href="/capacitaciones">Acceder</a>
                   </p>
               </div>
 
@@ -32,7 +32,7 @@ Administración
                     Gestioná los trámites de las municipalidades
                   </p>
                   <p>
-                      <a class="btn" href="#">Acceder</a>
+                      <a class="btn" href="/municipalidades">Acceder</a>
                   </p>
               </div>
 
@@ -42,7 +42,7 @@ Administración
                     Gestioná los permisos de usuarios desde aqui
                   </p>
                   <p>
-                      <a class="btn" href="#">Acceder</a>
+                      <a class="btn" href="/perfil">Acceder</a>
                   </p>
               </div>
 
@@ -53,7 +53,7 @@ Administración
                     Gestioná los proyectos de ASAMZA desde acá.
                   </p>
                   <p>
-                      <a class="btn" href="#">Acceder</a>
+                      <a class="btn" href="/working">Acceder</a>
                   </p>
               </div>
 
