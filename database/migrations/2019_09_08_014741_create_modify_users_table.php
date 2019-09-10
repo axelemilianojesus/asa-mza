@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ModifyUsersTable extends Migration
+class CreateModifyUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class ModifyUsersTable extends Migration
      */
     public function up()
     {
-      Schema::table('users', function(Blueprint $table){
+        Schema::create('modify_users', function (Blueprint $table) {
         $table->string('lastName');
         $table->date('birthday');
         $table->string('provincia');
@@ -21,7 +21,6 @@ class ModifyUsersTable extends Migration
         $table->integer('level');
         $table->string('avatar');
         $table->string('cargo');
-
       });
     }
 
@@ -32,8 +31,6 @@ class ModifyUsersTable extends Migration
      */
     public function down()
     {
-      Schema::table('users', function (Blueprint $table) {
-  $table->dropColumn(['lastName', 'birthday', 'provincia', 'phone',  'level', 'avatar', 'cargo']);
-});
+        Schema::dropIfExists('modify_users');
     }
 }

@@ -36,7 +36,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">CAPACITACIONES</h5>
                         <p>Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte.</p>
-                        <a class="btn" href="capacitacion.php">Ver mas »</a>
+                        <a class="btn" href="/capacitaciones">Ver mas »</a>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@ Inicio
                     Porque nos interesa tu futuro, y queremos ayudarte a crecer. <br> Conocé los cursos que tenemos para ofrecerte
                 </p>
                 <p>
-                    <a class="btn" href="capacitacion.php">Ver mas »</a>
+                    <a class="btn" href="/capacitaciones">Ver mas »</a>
                 </p>
             </div>
 
@@ -92,7 +92,7 @@ Inicio
                     Estamos en constante movimiento. Conocé mas sobre nuestros proyectos. <br> También podés sumarte a nuestros proyectos.
                 </p>
                 <p>
-                    <a class="btn" href="#">Ver mas »</a>
+                    <a class="btn" href="/proyectos">Ver mas »</a>
                 </p>
             </div>
 
@@ -103,7 +103,7 @@ Inicio
                     Somos una organización sin fines de lucro. Conocémos un poco mas.
                 </p>
                 <p>
-                    <a class="btn" href="quienes%20somos.php">Ver mas »</a>
+                    <a class="btn" href="/nosotros">Ver mas »</a>
                 </p>
             </div>
 
