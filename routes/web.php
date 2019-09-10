@@ -10,20 +10,23 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
- Route::get('/', 'HomeController@index')->name('inicio');
+Route::get('/', "HomeController@home");
+Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/register', 'RegisterController@create');
 // Route::post('/register', 'RegisterController@create');
 Route::get('/working','HomeController@working');
 Route::get('/admin','HomeController@admin');// ->middleware("Auth");
 /*
 |--------------------------------------------------------------------------
-| USER CONTROLLER
+| MUNI CONTROLLER
 
 |--------------------------------------------------------------------------
 */
 Route::get('/municipalidades', 'MuniController@all');
 Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los tramites por muni
+
 /*
 |--------------------------------------------------------------------------
 | TRAMITES CONTROLLER
