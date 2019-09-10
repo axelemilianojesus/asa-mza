@@ -168,10 +168,18 @@ a.nav-link, .dropdown-menu a {
 }
 
 .inicio a.btn {
-    background: #e26241;
+    background: gray;
     color: white;
     margin-top: 25px;
     width: 80%;
+}
+.cta{
+    color: white;
+    background: black;
+    width: 200px;
+}
+.cta :hover{
+	background: #E27F41;
 }
 
 .banner-standard {

@@ -36,7 +36,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">CAPACITACIONES</h5>
                         <p>Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte.</p>
-                        <a class="btn" href="/capacitaciones">Ver mas »</a>
+                        <a class="btn cta" href="/capacitaciones">Ver mas »</a>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">MUNICIPALIDADES</h5>
                         <p>Accedé a la guía completa de tramites por municipios. Además podés descargar toda la documentación necesaria desde aquí.</p>
-                        <a class="btn" href="/municipalidades">Ver mas »</a>
+                        <a class="btn cta" href="/municipalidades">Ver mas »</a>
                     </div>
                 </div>
 
