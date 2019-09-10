@@ -10,10 +10,10 @@ class MuniController extends Controller
       $vac=compact("munis");
       return view('municipalidades',$vac);
     }
-    public function detail($id){
-      $muni = Muni::find($id);
+    public function detail($id){ // esto nos trae todos los tramites de 1 muni
+      $munis = Muni::find($id);
       $tramites = Tramite::where('munis_id','=',$id)->get();
-      $vac=compact("muni","tramites");
+      $vac=compact("munis","tramites");
       return view('tramites',$vac);
     }
 }
