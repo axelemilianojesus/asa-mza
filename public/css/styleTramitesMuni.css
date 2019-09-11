@@ -1,76 +1,65 @@
-.contenedordiv { /*Este contenedor me permite centrar la imagen */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+contenedordiv { /Este contenedor me permite centrar la imagen /
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
 }
-
 .bg-muni{background-image: url("../img/asa-03.jpg");}
-
 .muni{
-  font-family: "Montserrat", sans-serif;
+ font-family: "Montserrat", sans-serif;
 }
-
 .muni h1 {  /* Correspondiente al titulo Municipalidades */
-  display: flex;
-  justify-content: center;
-  margin-bottom: 14px;
-  letter-spacing: 1px;
-  font-size: 30px;
-  margin-top: 14px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  margin-top: 0px;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 14px;
+ letter-spacing: 1px;
+ font-size: 30px;
+ margin-top: 14px;
+ background-color: black;
+ color: white;
+ padding: 10px;
+ margin-top: 0px;
 }
-
 .secciones { /*  Contenedor de todas las municipalidades  */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  /* background-image: url(../img/asa-01.jpg);
-  background-repeat: no-repeat; */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap;
+ /* background-image: url(../img/asa-01.jpg);
+ background-repeat: no-repeat; */
 }
-
 .boton {  /* Prueba para hacer dinamicos los enlaces a cada municipalidad */
-  border:none;
-  background: none;
+ border:none;
+ background: none;
 }
-
-
-section :hover{  /*Color naranja del cursor cuando se posa en el nombre de cada muni */
-  color: white;
+section :hover{  /Color naranja del cursor cuando se posa en el nombre de cada muni /
+ color: white;
 }
-
-.seccionesmuni h2{  /*Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni */
-  cursor: pointer;
+.seccionesmuni h2{  /Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni /
+ cursor: pointer;
 }
 .seccionesmuni h2 a{
-  text-decoration: none;
+ text-decoration: none;
 }
 /* Correspondiente a la caja contenedora de cada municipalidad, ej "Capital" */
-
 .seccionesmuni {
-  width: 53vh;
-    height: 25vh;
-    /* border: solid orange; */
-    text-align: center;
-    margin: 0.5em;
-    border-radius: 0.5em;
-    /* box-shadow: 0px 0px 4px 4px #FF9347; */
-    background: #FF9347;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2em;
-    /* margin: 60px; */
+ width: 53vh;
+   height: 25vh;
+   /* border: solid orange; */
+   text-align: center;
+   margin: 0.5em;
+   border-radius: 0.5em;
+   /* box-shadow: 0px 0px 4px 4px #FF9347; */
+   background: #FF9347;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 2em;
+   /* margin: 60px; */
 }
-
 @media only screen and (min-width: 880px) {
-  div.muni{
-      /* margin-top: 40px;
-      margin-bottom: 40px; */
+ div.muni{
+     /* margin-top: 40px;
+     margin-bottom: 40px; */
 }
-
 }

@@ -113,7 +113,7 @@ Inicio
                     Podés acceder desde aca al Colegio de Arquitectos  <br> o a la Caja previsional.
                 </p>
                 <p>
-                    <a class="btn" href="/tramites/tramites-online">Ver mas »</a>
+                    <a class="btn" href="/tramites-online">Ver mas »</a>
                 </p>
             </div>
 
