@@ -70,6 +70,14 @@ h1.forms {
     background-color: #E27F41;
 }
 
+.orange-button{
+  background-color: #E27F41 !important;
+}
+.orange-button :hover{
+  background-color: black !important;
+}
+
+
 .container .errores ul li {
     list-style: none;
     font-style: italic;
