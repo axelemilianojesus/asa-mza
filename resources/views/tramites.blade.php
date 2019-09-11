@@ -19,9 +19,10 @@ Tramites de {{$munis->name}}
                <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p>
                <p>aca descarga el archivo</p>
                {{-- @if (Auth::user()->level === 1) --}}
-                 <button type="button" class="btn btn-secondary">Modificar</button>
-                 <button type="button" class="btn btn-danger">Eliminar</button>
-                 <button type="button" class="btn btn-secondary">Agregar tramite</button>
+               <button type="button" class="btn btn-secondary">Modificar</button>
+               <button type="button" class="btn btn-secondary active ">Eliminar</button>
+                 <button type="button" class="btn btn-dark">
+                 <a href="/agregar-tramite">Agregar tramite</a></button>
                {{-- @endif --}}
              </li>
            </ul>
