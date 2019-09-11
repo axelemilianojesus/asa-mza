@@ -18,14 +18,11 @@ Contactos
       <div class="containergral max-width">
           <div class="contenedor-iconos bg-light py-4">
               <ion-icon name="pin"></ion-icon>
-              <p class="datoscont">DUARDO Arquitectos SL / P. de la Catellana 79, Madrid 28046.</p>
+
               <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9476.244620415422!2d-68.85932236713496!3d-32.888690753885164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09e08865d9f7%3A0x6a62c1f49ef33549!2sDigital+House+-+Mendoza!5e0!3m2!1ses!2sar!4v1561680038177!5m2!1ses!2sar" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <br>
-              <ion-icon name="call"></ion-icon>
-              <p class="datoscont">
-                  <a href=123-456-7890>(+34) 947 002 963</a>
-              </p>
-              <ion-icon name="mail"></ion-icon>
+              <p class="datoscont"><a href="https://goo.gl/maps/RhpVv5v7DMfCKzZh9" target="_blank"> DUARDO Arquitectos SL / P. de la Catellana 79, Madrid 28046.</a></p>
+             <a href=123-456-7890>(+34) 947 002 963</a>
+
               <br>
               <a class="datoscont" href="mailto:asa.mendozaunidos@gmail.com">asa.mendozaunidos@gmail.com</a>
               <div class="iconosredes">
