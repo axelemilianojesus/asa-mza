@@ -37,7 +37,7 @@ Agregar trámites
 
     <div class="formLog" id="municipio" style="width:100%">
 
-        <i class="fab fa-font-awesome-flag"></i> A cuál municipio pertenece?:
+         A cuál municipio pertenece?:
         <select class="formLog  @error('municipio') is-invalid @enderror"  name="municipio" id="municipio">
 
             @foreach ($munis as $muni)
