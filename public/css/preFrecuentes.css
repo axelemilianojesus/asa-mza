@@ -7,8 +7,9 @@
 .tarjeta :nth-child(even){
   background: rgb(84, 82, 84);
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   padding: 20px;
+  line-height: 1.5;
 }
 
 div.container{
