@@ -45,7 +45,7 @@ Route::get('/municipalidades/{id}', 'MuniController@detail');// va a listar los 
 // Route::get('/tramites/{id}', 'TramiteController@all');
 Route::get('/tramites/{id}', 'TramiteController@find');
 Route::get('/tramites-online', 'TramiteController@online');
-Route::get('/tramites/agregar-tramite','TramiteController@agregar'); // ->middleware("Auth");
+Route::get('/agregar-tramite','TramiteController@agregar'); // ->middleware("Auth");
 
 /*
 |--------------------------------------------------------------------------

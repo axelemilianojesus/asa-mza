@@ -5,11 +5,11 @@ use App\Tramite;
 use App\Muni;
 class TramiteController extends Controller
 {
-    
+
     public function online(){
       return view('tramites-online'); // utilizado solo para presentar link externos
     }
-    public function find($id){
+    public function find($id){ // devuelve el listado de tramites por munis
       $tramites = Tramite::find($id);
       $munis = Muni::find($id);
       $vac=compact('tramites','munis');
