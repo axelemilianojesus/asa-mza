@@ -36,7 +36,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">CAPACITACIONES</h5>
                         <p>Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte.</p>
-                        <a class="btn" href="/capacitaciones">Ver mas »</a>
+                        <a class="btn cta" href="/capacitaciones">Ver mas »</a>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ Inicio
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">MUNICIPALIDADES</h5>
                         <p>Accedé a la guía completa de tramites por municipios. Además podés descargar toda la documentación necesaria desde aquí.</p>
-                        <a class="btn" href="/municipalidades">Ver mas »</a>
+                        <a class="btn cta" href="/municipalidades">Ver mas »</a>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ Inicio
 
     <div class="container-fluid jumbotron pb-0 mb-0">
         <div class="row montserrat text-center font-small">
-            <div class="col-md-6 capacitacion">
+            <div class="col-md-6 capacitacion container-contacto">
                 <h2 class="bg-orange color-white">CAPACITACIONES</h2>
                 <p>
                     Porque nos interesa tu futuro, y queremos ayudarte a crecer. <br> Conocé los cursos que tenemos para ofrecerte
@@ -77,7 +77,7 @@ Inicio
             </div>
 
 
-            <div class="col-md-6 muni">
+            <div class="col-md-6 muni container-contacto">
                 <h2 class="bg-black color-white">MUNICIPALIDADES</h2>
                 <p>
                     Accedé a la guía completa de trámites por Municipalidades. <br> Además encontrarás un organigrama para ayudarte a completar los trámites
@@ -86,7 +86,7 @@ Inicio
                     <a class="btn" href="/municipalidades">Ver mas »</a>
                 </p>
             </div>
-            <div class="col-md-6 proyectos">
+            <div class="col-md-6 proyectos container-contacto">
                 <h2 class="bg-orange color-white">PROYECTOS</h2>
                 <p>
                     Estamos en constante movimiento. Conocé mas sobre nuestros proyectos. <br> También podés sumarte a nuestros proyectos.
@@ -97,7 +97,7 @@ Inicio
             </div>
 
 
-            <div class="col-md-6 nosotros">
+            <div class="col-md-6 nosotros container-contacto">
                 <h2 class="bg-black color-white">NOSOTROS</h2>
                 <p>
                     Somos una organización sin fines de lucro. Conocémos un poco mas.
@@ -107,7 +107,7 @@ Inicio
                 </p>
             </div>
 
-            <div class="col-md-6 proyectos">
+            <div class="col-md-6 proyectos container-contacto">
                 <h2 class="bg-orange color-white">TRAMITES ONLINE</h2>
                 <p>
                     Podés acceder desde aca al Colegio de Arquitectos  <br> o a la Caja previsional.
@@ -118,7 +118,7 @@ Inicio
             </div>
 
 
-            <div class="col-md-6 nosotros">
+            <div class="col-md-6 nosotros container-contacto">
                 <h2 class="bg-black color-white">NOTICIAS</h2>
                 <p>
                     Enterate de las ultimas novedades. Mirá las ultimas noticias.

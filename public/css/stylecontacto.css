@@ -1,15 +1,10 @@
-*{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .contenedormayor{
   margin-bottom: 10px;
 
 }
 .bg-contacto{background-image: url("../img/contactoimagen.jpg");}
+
 
 .contenedorcontacto .form .form-header .form-titulo{
   font-weight: normal;
