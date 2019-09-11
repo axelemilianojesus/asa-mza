@@ -165,7 +165,7 @@
                         <p>(+54) 261 669 7897</p>
                     </span>
                     <span class="d-flex"><i class="fas fa-envelope mr-2"></i>
-                        <p>asa.mendozaunidos@gmail.com</p>
+                        <p>info@asamendoza.org</p>
                     </span>
                 </div>
                 <div class="footer-columna">
