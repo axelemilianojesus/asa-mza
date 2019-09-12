@@ -9,6 +9,7 @@ Gris Oscuro: #333333 / Gris Clarito: #F7F7F7  */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+		text-align: center;
 }
 
 body {
@@ -24,6 +25,9 @@ body {
     max-width: 960px;
 }
 .bg-ss{background-image: url("../img/serviciosimg.jpg");}
+.bg-admin{background-image: url("../img/administracion.jpg");}
+.bg-proyectos{background-image: url("../img/proyectos.jpg");}
+
 .bg-image {
     width: 100%;
     padding: 10px;
@@ -156,10 +160,12 @@ a.nav-link, .dropdown-menu a {
 
 .bg-black {
     background: #000 !important;
+		    padding: 10px;
 }
 
 .bg-orange {
     background: #E27F41;
+		    padding: 10px;
 }
 
 .font-small {
@@ -168,10 +174,10 @@ a.nav-link, .dropdown-menu a {
 }
 
 .inicio a.btn {
-    background: gray;
-    color: white;
-    margin-top: 25px;
-    width: 80%;
+	margin-top: 25px;
+	width: auto;
+	border: 1px solid;
+	padding: auto 10px;
 }
 .cta{
     color: white;
@@ -210,8 +216,7 @@ a.nav-link, .dropdown-menu a {
 
 .container-contacto {
     margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid gray;
+
 }
 
 /*_____________________MOBILE LAST*/

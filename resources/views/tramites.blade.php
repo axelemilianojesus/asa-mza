@@ -7,6 +7,9 @@ Tramites de {{$munis->name}}
 @endsection
 @section('main')
  <div class="muni">
+   <div class="banner-standard bg-ss">
+       <h2 class="banner-texto-standard"><span>TRÁMITES ONLINE</span></h2>
+   </div>
    <div class="banner-standard bg-muni mb-0">
        <h2 class="banner-texto-standard"><span>TRAMITES {{$munis->name}}</span></h2>
    </div>

@@ -11,12 +11,13 @@ Capacitaciones
 
 
 @section('main')
+  <div class="titulo banner-standard bg-capacitaciones">
+
+      <h1 class="capacitacion banner-texto-standard"> CAPACITACIONES</h1>
+</div>
 <div class="container " id="capacitacion">
 
-    <div class="titulo banner-standard bg-capacitaciones">
 
-        <h1 class="capacitacion banner-texto-standard"> CAPACITACIONES</h1>
-  </div>
   <div class="span subtitulo">
       <span class="capacitacion">Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte. <br>
         Pasá el mousse sobre la imagen para obtener más información.</span>

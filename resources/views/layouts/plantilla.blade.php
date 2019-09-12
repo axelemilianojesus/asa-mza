@@ -35,9 +35,9 @@
         </div> -->
 
               <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn my-2 my-sm-0" type="submit">
-                      <!--<img src="img/header/asa-finder.png" alt="asa-finder" width="20px">--><i class="fas fa-search fa-lg"></i></button>
+                  {{-- <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"> --}}
+                  {{-- <button class="btn my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search fa-lg"></i></button> --}}
               </form>
 
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
@@ -77,9 +77,9 @@
                       <a class="nav-link" "capa-destacado" href="/capacitaciones">Capacitaciones<span class="sr-only">(current)</span></a>
                   </li>
 
-                  <li class="nav-item">
+                  {{-- <li class="nav-item">
                       <a class="nav-link" href="/working">Proyectos</a>
-                  </li>
+                  </li> --}}
 
                   <li class="nav-item">
                       <a class="nav-link" href="/tramites-online">Tramites Online</a>

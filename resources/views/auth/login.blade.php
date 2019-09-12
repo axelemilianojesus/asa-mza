@@ -20,12 +20,12 @@
 
         <div class="container bg-white p-4">
 
-            <h1 class="text-center">Bienvenido a</h1>
+            <h1 class="text-center">Bienvenidos</h1>
             <img class="logo" src="img/asalogo.png" alt="">
 
             <form class="login" action="{{ route('login') }}" method="post">
               @csrf
-                <h1 class="text-center">Ingresar</h1>
+                <h2 class="text-center">Ingresar</h2>
 
 
                     <div class="formLog" id="email">
