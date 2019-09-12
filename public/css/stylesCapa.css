@@ -10,8 +10,8 @@ body.capacitacion {
 
 }
 
-.bg-capacitaciones{background-image: url("../img/capacitaciones/capacitaciones.jpg");}
-}
+.bg-capacitaciones{background-image: url("../img/capacitaciones/capacitaciones.jpg");
+background-size: cover;}
 
 
 
