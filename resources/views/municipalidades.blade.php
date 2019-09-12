@@ -13,7 +13,7 @@ Municipalidades
 @section('main')
   <div class="muni">
     <div class="banner-standard bg-muni mb-0">
-        <h2 class="banner-texto-standard"><span>MUNICIPALIDADES</span></h2>
+        <h2 class="banner-texto-standard titulos-naranja"><span>MUNICIPALIDADES</span></h2>
     </div>
       <div class="secciones max-width bg-image py-5">
 
