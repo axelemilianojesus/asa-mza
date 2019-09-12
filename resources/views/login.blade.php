@@ -20,27 +20,14 @@
 
         <div class="container bg-white p-4">
 
-            <h1 class="text-center">Bienvenido aa</h1>
+            <h1 class="text-center">Bienvenido a</h1>
             <img class="logo" src="img/asalogo.png" alt="">
 
             <form class="login" action="{{ route('login') }}" method="post">
               @csrf
                 <h1 class="text-center">Ingresar</h1>
 
-                    <div class="errores">
-                        <ul>
-                            @if (isset($errores))
-                            OOPS! algo salió mal:
-                            @foreach ($errores as $error): ?>
-                            <li>{{ $error }}</li>
-                            @endforeach
-                            Por favor verificá los datos y volvé a intentarlo.
-                          @endif
 
-
-
-                        </ul>
-                    </div>
                     <div class="formLog" id="email">
                         <p class="info">Ingresá tu correo electrónico</p>
                         <i class="fas fa-at"></i>
