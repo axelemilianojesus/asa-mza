@@ -14,7 +14,7 @@ Nosotros
   <div class="containerqsomos bg-image-white">
 
       <div class="banner-standard bg-quienes">
-          <h2 class="banner-texto-standard"><span>ASOCIACION SOLIDARIA DE ARQUITECTOS</span></h2>
+          <h2 class="banner-texto-standard titulos-naranja"><span>ASOCIACION SOLIDARIA DE ARQUITECTOS</span></h2>
       </div>
         <section class="subtitulo">
             <h3 id="blanco">Construimos la casa, tú la conviertes en un hogar.</h3>

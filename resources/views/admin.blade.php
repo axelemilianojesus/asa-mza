@@ -13,7 +13,7 @@ Administración
 @section('main')
   <div class="inicio">
     <div class="banner-standard bg-admin">
-        <h2 class="banner-texto-standard"><span>ADMINISTRACION</span></h2>
+        <h2 class="banner-texto-standard titulos-naranja"><span>ADMINISTRACION</span></h2>
     </div>
 
       <div class="container-fluid jumbotron pb-0 mb-0">

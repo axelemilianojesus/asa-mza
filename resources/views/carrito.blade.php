@@ -2,7 +2,8 @@
 @section('css')
 <link rel="stylesheet" href="../../css/styleCarrito.css">
 @endsection
-@section('Carrito')
+@section('title')
+  Carrito de Capacitaciones
 @endsection
 @section('main')
 
@@ -60,10 +61,6 @@
            </div>
        </aside>
    </section>
-   <footer>
-       <?php include_once("footer.php") ?>
-   </footer>
-</body>
-</html>
+
 
 @endsection

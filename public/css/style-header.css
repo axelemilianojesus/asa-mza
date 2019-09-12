@@ -50,8 +50,8 @@ body {
 }
 
 .capacitacion, .titulos-naranja{
-  color:#E27F41;
-  font-weight: bold;
+  color:#E27F41 !important;
+  font-weight: bold !important;
   font-style: italic;
   font-size: larger;
 }

@@ -15,7 +15,7 @@ Trámites online
   <div class="inicio">
     <div class="max-width">
       <div class="banner-standard bg-ss">
-          <h2 class="banner-texto-standard"><span>TRÁMITES ONLINE</span></h2>
+          <h2 class="banner-texto-standard titulos-naranja"><span>TRÁMITES ONLINE</span></h2>
       </div>
       <div class="container-fluid jumbotron pb-0 mb-0">
           <div class="row montserrat text-center font-small">

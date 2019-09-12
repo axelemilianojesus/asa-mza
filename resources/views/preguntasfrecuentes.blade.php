@@ -12,7 +12,7 @@ Preguntas Frecuentes
 
 @section('main')
   <div class="banner-standard bg-faq">
-      <h2 class="banner-texto-standard"><span>PREGUNTAS FRECUENTES</span></h2>
+      <h2 class="banner-texto-standard titulos-naranja"><span>PREGUNTAS FRECUENTES</span></h2>
   </div>
 <div class="container" id="preFrecuentes">
     <section class="preguntasFrecuentes">

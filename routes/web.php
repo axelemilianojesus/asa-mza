@@ -77,4 +77,4 @@ Route::get('/contactos','ContactosController@contactos');
 | CARRITO CONTROLLER
 |--------------------------------------------------------------------------
 */
-Route::get('/carrito','carritoController@carrito');
+Route::get('/carrito','CarritoController@carrito');

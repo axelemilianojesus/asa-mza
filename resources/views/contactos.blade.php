@@ -13,7 +13,7 @@ Contactos
 @section('main')
   <div class="contenedormayor">
       <div class="banner-standard bg-contacto">
-          <h2 class="banner-texto-standard"><span>Si tienes preguntas, no dudes en contactarnos.</span></h2>
+          <h2 class="banner-texto-standard titulos-naranja "><span>¡CONTÁCTENOS!</span></h2>
       </div>
       <div class="containergral max-width">
           <div class="contenedor-iconos bg-light py-4">

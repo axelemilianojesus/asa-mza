@@ -38,7 +38,7 @@ Capacitaciones
 
                 <h2>Título</h2>
                 <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="carrito.php" id="comprar">Comprar ahora</a>
+                <a href="/carrito" id="comprar">Comprar ahora</a>
                 <a href="#" id="ampliar">Agrandar imagen</a>
                 <!-- <a href="#"id="contenido">Agregar al carrito</a> NO ENTIENDO LA DIFERENCIA ENTRE COMPRAR Y AGREGAR -->
             </div>
@@ -60,7 +60,7 @@ Capacitaciones
 
                 <h2>Título</h2>
                 <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="carrito.php" id="comprar">Comprar ahora</a>
+                <a href="/carrito" id="comprar">Comprar ahora</a>
                 <a href="#" id="ampliar">Agrandar imagen</a>
                 <!-- <a href="#"id="contenido">Agregar al carrito</a> NO ENTIENDO LA DIFERENCIA ENTRE COMPRAR Y AGREGAR -->
             </div>
