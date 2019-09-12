@@ -25,6 +25,7 @@ Tramites de {{$munis->name}}
 
                  <button type="button" class="btn btn-secondary">Modificar</button>
                  <button type="button" class="btn btn-danger">Eliminar</button>
+
                  <button type="button" class="btn btn-secondary">
                  <a href="/agregar-tramite">Agregar tramite</a></button>
                {{-- @endif --}}

@@ -15,7 +15,7 @@
         <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
             @csrf
               <h1 class="forms"> Registrate</h1>
-                <div class="errores">
+
                   <div class="formLog" id="name">
                       <p class="info">Colocá tu nombre</p>
                       <i class="fas fa-user"></i>
@@ -64,7 +64,7 @@
                   </div>
                   <div class="formLog" id="avatar">
                       <p class="info">Podés elegir tu avatar</p>
-                      <i class="fas fa-image" id="avatar"></i>
+                      <i class="fas fa-image"</i>
                       <input id="avatar" class="file @error('avatar') is-invalid @enderror" type="file" name="avatar" value= "{{ old('file') }}">
                       @error('avatar')
                           <span class="invalid-feedback" role="alert">
