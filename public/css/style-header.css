@@ -49,6 +49,13 @@ body {
     letter-spacing: 1px;
 }
 
+.capacitacion, .titulos-naranja{
+  color:#E27F41;
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+}
+
 a {
     color: #333;
 }

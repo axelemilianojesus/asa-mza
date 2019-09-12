@@ -156,7 +156,7 @@
                     <input type="email" placeholder="Escriba su Correo">
                     <input type="submit" value=" Suscribirse" class="boton-orange w-100">
                 </div>
-                <div class="footer-columna">
+                <div class="footer-columna" style="margin: auto;">
                     <h3 class="font-weight-bolder">Contactos</h3>
                     <span class="d-flex"><i class="fas fa-map-marker-alt mr-2"></i>
                         <p>244 Lorem ipsum dolor sit amet</p>

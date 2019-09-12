@@ -71,3 +71,10 @@ Route::get('/capacitaciones','CapacitacionesController@capacitaciones');
 |--------------------------------------------------------------------------
 */
 Route::get('/contactos','ContactosController@contactos');
+
+/*
+|--------------------------------------------------------------------------
+| CARRITO CONTROLLER
+|--------------------------------------------------------------------------
+*/
+Route::get('/carrito','carritoController@carrito');
