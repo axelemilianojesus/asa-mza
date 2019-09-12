@@ -65,13 +65,13 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-0">
-                {{-- @if (Auth::check())
-                  @if (Auth::user()->level === 1) --}}
+                @if (Auth::check())
+                  {{-- @if (Auth::user()->level === 1) --}}
                     <li class="nav-item active">
                         <a class="nav-link" href="/admin">Administración <span class="sr-only">(current)</span></a>
                     </li>
-                  {{-- @endif
-                @endif --}}
+                  {{-- @endif --}}
+                @endif
 
                   <li class="nav-item active">
                       <a class="nav-link" "capa-destacado" href="/capacitaciones">Capacitaciones<span class="sr-only">(current)</span></a>
@@ -119,7 +119,7 @@
                           Mi Perfil
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="perfil.php">Mi perfil</a>
+                          <a class="dropdown-item" href="/perfil">Mi perfil</a>
                           <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">
                               {{ __('Cerrar Sesión') }}
@@ -133,7 +133,8 @@
                   @else
                   <li class="nav-item">
                       <a class="nav-link" href="/login">Ingresar</a>
-                      @endif
+                  </li>
+                  @endif
 
 
               </ul>
