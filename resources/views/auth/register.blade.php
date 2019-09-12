@@ -9,77 +9,169 @@
 @endsection
 
 @section('main')
-  <section class="registro m-0 py-5" >
-      <div class="container bg-white p-4" id="registro">
 
-        <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+<body class="forms" id="login">
+<section class="registro m-0 py-5">
+    <div class="container bg-white p-4">
+        <form class="registro" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
             @csrf
-              <h1 class="forms"> Registrate</h1>
+            <h1 class="form text-center">Registrate</h1>
+                <div class="formLog" id="name">
+                        <p class="info">Coloca tu nombre</p>
+                            <i class="fas fa-user"></i>
+                            <input id="name" type="text"  class="@error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre">
 
-                  <div class="formLog" id="name">
-                      <p class="info">Colocá tu nombre</p>
-                      <i class="fas fa-user"></i>
-                      <input id="name" class=" @error('name') is-invalid @enderror" type="text" name="name" placeholder="Nombre " value="{{ old('name') }}" autofocus required>
-                      @error('name')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
-                  </div>
-                  <div class="formLog" id="lastName">
-                      <p class="info">Colocá tu apellido</p>
-                      <i class="fas fa-user"></i>
-                      <input id="lastName" class=" @error('lastName') is-invalid @enderror" type="text" name="lastName" placeholder=" Apellido " value="{{ old('lastName') }}" autofocus required>
-                      @error('lastName')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
-                  </div>
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                </div>
+                <div class="formLog" id="lastName">
+                    <p class="info">Coloca tu apellido</p>
+                    <i class="fas fa-user"></i>
+                    <input id="lastname" type="text" class=" @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Apellido">
 
-                  <div class="formLog" id="email">
-                      <p class="info">Ingresá tu correo electrónico</p>
-                      <i class="fas fa-at"></i>
-                      <input id="email" class=" @error('email') is-invalid @enderror"  type="email" name="email" placeholder="ejemplo@correo.com" value="{{ old('email') }}" autofocus required>
-                      @error('email')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
-                  </div>
-                  <div class="formLog" id="password">
-                      <p class="info">Tu contraseña debe contener: mayúsculas, minúsculas y números</p>
-                      <i class="fas fa-key"></i>
-                      <input id="password" class=" @error('password') is-invalid @enderror"  type="password" name="password" placeholder="Ingresá tu contraseña" autofocus required>
-                      @error('password')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
-                  </div>
-                  <div class="formLog" id="password">
-                      <p class="info">Repetí tu contraseña</p>
-                      <i class="fas fa-key"></i>
-                      <input id="passwordRepeat" type="password" name="password1" placeholder="Repite tu contraseña" autofocus required>
-                  </div>
-                  <div class="formLog" id="avatar">
-                      <p class="info">Podés elegir tu avatar</p>
-                      <i class="fas fa-image"</i>
-                      <input id="avatar" class="file @error('avatar') is-invalid @enderror" type="file" name="avatar" value= "{{ old('file') }}">
-                      @error('avatar')
-                          <span class="invalid-feedback" role="alert">
-                              <strong>{{ $message }}</strong>
-                          </span>
-                      @enderror
-                  </div>
-                  <button class="form" type="submit" name="button">{{ __('Registrarme') }}</button>
-                  <div class="formLog" id="recordar">
-                    <p class="formLog">Si ya tienes un usuario <a class="formLog" href="/login">presiona aquí</a></p>
-
+                    @error('lastname')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
 
+                <div class="formLog" id="email">
+                    <p class="info">Ingresa tu correo electrónico</p>
+                        <i class="fas fa-at"></i>
+                        <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="ejemplo@correo.com">
+
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="formLog" id="password">
+                        <p class="info">TU contraseña debe contener: mayúsculas, minúsculas y números</p>
+                        <i class="fas fa-key"></i>
+                        <input id="password" type="password" class=" @error('password') is-invalid @enderror" name="password" placeholder="Ingresa tu contraseña" required autocomplete="new-password">
+
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+
+                    </div>
+
+                    <div class="formLog" id="password">
+                        <p class="info">Repite tu contraseña</p>
+                        <i class="fas fa-key"></i>
+                        <input id="password-confirm" type="password" class="" name="password_confirmation" required autocomplete="new-password">
+                    </div>
+
+                    <div class="formLog" id="phone">
+                            <p class="info">Agrega el teléfono</p>
+                            <i class="fas fa-phone"></i>
+                            <input id="phone" type="text" class=" @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" autofocus placeholder="261 XXX XXXX">
+
+                            @error('phone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                    </div>
+
+                    <button class="form" type="submit" name="button">
+                        {{ __('Registrarme') }}
+                    </button>
+
+                    <div class="formLog">
+
+                    <p class="formLog">Si ya tenés un usuario <a class="formLog" href="/login"> presioná aquí</a> </p>
+                </div>
             </form>
-
-
         </div>
-@endsection
+</body>
+    @endsection
+
+
+
+{{--
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
+
+                <div class="card-body">
+
+
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-4 col-form-label text-md-right">{{ __('Lastname') }}</label>
+
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone') }}</label>
+
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection --}}
