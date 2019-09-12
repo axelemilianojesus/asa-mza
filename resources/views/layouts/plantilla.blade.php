@@ -46,7 +46,7 @@
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-skype"></i></a></div>
               <div>
                   @if (Auth::check())
-                  <label>
+                  <label class="usuario">
                       Bienvenido, {{Auth::user()->name}}
                       {{-- <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%> --}}
 
