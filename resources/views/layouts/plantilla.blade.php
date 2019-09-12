@@ -95,7 +95,7 @@
                           <!--<div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>-->
                       </div> --}}
-                  </li>
+                  {{-- </li> --}}
                   <li class="nav-item">
                       <a class="nav-link" href="/nosotros">Nosotros</a>
                   </li>
