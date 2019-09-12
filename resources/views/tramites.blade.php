@@ -7,9 +7,7 @@ Tramites de {{$munis->name}}
 @endsection
 @section('main')
  <div class="muni">
-   <div class="banner-standard bg-ss">
-       <h2 class="banner-texto-standard"><span>TRÁMITES ONLINE</span></h2>
-   </div>
+
    <div class="banner-standard bg-muni mb-0">
        <h2 class="banner-texto-standard"><span>TRAMITES {{$munis->name}}</span></h2>
    </div>
@@ -21,14 +19,14 @@ Tramites de {{$munis->name}}
              <li>
                <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p>
                <p>aca descarga el archivo</p>
-               {{-- @if (Auth::user()->level === 1) --}}
+               @if (Auth::check())
 
                  <button type="button" class="btn btn-secondary">Modificar</button>
                  <button type="button" class="btn btn-danger">Eliminar</button>
 
                  <button type="button" class="btn btn-secondary">
                  <a href="/agregar-tramite">Agregar tramite</a></button>
-               {{-- @endif --}}
+               @endif
              </li>
            </ul>
            @endforeach

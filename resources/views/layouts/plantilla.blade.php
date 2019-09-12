@@ -48,7 +48,7 @@
                   @if (Auth::check())
                   <label>
                       Bienvenido, {{Auth::user()->name}}
-                      <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%>
+                      {{-- <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%> --}}
 
                   </label>
 
