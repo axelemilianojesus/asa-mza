@@ -2,6 +2,7 @@
 @section('css')
  <link rel="stylesheet" href="../../css/style-header.css">
 
+
 @endsection
 
 
@@ -12,13 +13,16 @@ Trámites online
 
 @section('main')
   <div class="inicio">
-
+    <div class="max-width">
+      <div class="banner-standard bg-ss">
+          <h2 class="banner-texto-standard"><span>TRÁMITES ONLINE</span></h2>
+      </div>
       <div class="container-fluid jumbotron pb-0 mb-0">
           <div class="row montserrat text-center font-small">
               <div class="col-md-6 capacitacion">
                   <h2 class="bg-orange color-white">COLEGIO DE ARQUITECTOS</h2>
 
-                  <p> <a class="btn" href="http://camza.org.ar/tramites-online/" target="_blank">Tramites Online</a>
+                  <p> <a class="btn" href="http://camza.org.ar/tramites-online/" target="_blank">Trámites Online</a>
                   </p>
                   <p> <a class="btn" href="http://camza.org.ar/leyes-y-honorarios/" target="_blank">Leyes y Honorarios</a>
                   </p>

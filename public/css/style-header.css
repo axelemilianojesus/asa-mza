@@ -23,7 +23,7 @@ body {
 .w-960 {
     max-width: 960px;
 }
-
+.bg-ss{background-image: url("../img/serviciosimg.jpg");}
 .bg-image {
     width: 100%;
     padding: 10px;
