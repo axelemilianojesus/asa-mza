@@ -12,6 +12,9 @@ Administración
 
 @section('main')
   <div class="inicio">
+    <div class="banner-standard bg-admin">
+        <h2 class="banner-texto-standard"><span>ADMINISTRACION</span></h2>
+    </div>
 
       <div class="container-fluid jumbotron pb-0 mb-0">
           <div class="row montserrat text-center font-small">

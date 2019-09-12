@@ -140,7 +140,7 @@ Inicio
 </section>
 
 <section class="d-flex container-fluid w-100 text-white bg-dark p-3 m-auto align-items-center">
-    <div class="m-auto col-12 col-md-6">
+    <div class="m-auto col-12 col-md-6" style="background: none;">
         <img src="img/tarjetas.png" width="100%" alt="tarjetas">
     </div>
 </section>
