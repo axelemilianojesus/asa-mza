@@ -9,7 +9,7 @@ Tramites de {{$munis->name}}
  <div class="muni">
 
    <div class="banner-standard bg-muni mb-0">
-       <h2 class="banner-texto-standard"><span>TRAMITES {{$munis->name}}</span></h2>
+       <h2 class="banner-texto-standard titulos-naranja"><span>TRAMITES {{$munis->name}}</span></h2>
    </div>
      <div class="secciones max-width bg-image py-5">
        {{-- <section class="seccionesmuni"> --}}
@@ -18,11 +18,16 @@ Tramites de {{$munis->name}}
              <section class="seccionesmuni">
              <li>
                <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p>
-               <p>aca descarga el archivo</p>
+               <p>{{$tramite->description}}</p>
                @if (Auth::check())
 
                  <button type="button" class="btn btn-secondary">Modificar</button>
-                 <button type="button" class="btn btn-danger">Eliminar</button>
+                 <form class="" action="/tramites/eliminar" method="post">
+                   @csrf
+                   <input type="hidden" name="id" value="{{$tramite->id}}">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                 </form>
+
 
                  <button type="button" class="btn btn-secondary">
                  <a href="/agregar-tramite">Agregar tramite</a></button>
