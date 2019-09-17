@@ -19,6 +19,7 @@ contenedordiv { /Este contenedor me permite centrar la imagen /
  padding: 10px;
  margin-top: 0px;
 }
+
 .secciones { /*  Contenedor de todas las municipalidades  */
  display: flex;
  flex-direction: row;
@@ -27,6 +28,13 @@ contenedordiv { /Este contenedor me permite centrar la imagen /
  flex-wrap: wrap;
  /* background-image: url(../img/asa-01.jpg);
  background-repeat: no-repeat; */
+}
+.secciones li{
+  list-style: none;
+}
+.secciones p a{
+  text-decoration: none;
+  list-style: none;
 }
 .boton {  /* Prueba para hacer dinamicos los enlaces a cada municipalidad */
  border:none;

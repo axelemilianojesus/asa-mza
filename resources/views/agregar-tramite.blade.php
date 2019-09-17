@@ -68,10 +68,10 @@ Agregar trámites
         </div>
         <br>
         {{-- <input type="submit" class="btn-submit" value="Guardar"> --}}
-        <button class="form" type="submit" name="button">
+        <button class="btn btn-secondary" type="submit" name="button">
             {{ __('Guardar') }}
         </button>
-        <button class="form" type="reset" name="button">
+        <button class="btn btn-secondary" type="reset" name="button">
             {{ __('Limpiar Campos') }}
         </button>
 

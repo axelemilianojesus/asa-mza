@@ -47,7 +47,7 @@
               <div>
                   @if (Auth::check())
                   <label class="usuario">
-                      Bienvenido, {{Auth::user()->name}}
+                      Sesion uniciada por: {{Auth::user()->name}}
                       {{-- <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%> --}}
 
                   </label>
@@ -67,8 +67,17 @@
               <ul class="navbar-nav mr-0">
                 @if (Auth::check())
                   {{-- @if (Auth::user()->level === 1) --}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/admin">Administración <span class="sr-only">(current)</span></a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administración
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/admin">Panel de Control</a>
+                            <a class="dropdown-item" href="/agregar-tramite">Agregar trámites</a>
+                            <a class="dropdown-item" href="#">Agregar Trámites on-line</a>
+                            <a class="dropdown-item" href="#">Agregar Capacitación</a>
+                        </div>
                     </li>
                   {{-- @endif --}}
                 @endif

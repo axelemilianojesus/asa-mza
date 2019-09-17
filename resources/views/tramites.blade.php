@@ -29,8 +29,8 @@ Tramites de {{$munis->name}}
                  </form>
 
 
-                 <button type="button" class="btn btn-secondary">
-                 <a href="/agregar-tramite">Agregar tramite</a></button>
+                 {{-- <button type="button" class="btn btn-secondary">
+                 <a href="/agregar-tramite">Agregar tramite</a></button> --}}
                @endif
              </li>
            </ul>

@@ -35,11 +35,11 @@ Administración
                     Gestioná los trámites de las municipalidades
                   </p>
                   <p>
-                      <a class="btn" href="/municipalidades">Acceder</a>
+                      <a class="btn" href="/agregar-tramite">Acceder</a>
                   </p>
               </div>
 
-              <div class="col-md-6 capacitacion">
+              <div class="col-md-6 muni">
                   <h2 class="bg-orange color-white">USUARIOS</h2>
                   <p>
                     Gestioná los permisos de usuarios desde aqui
