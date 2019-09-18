@@ -29,7 +29,7 @@ class TramiteController extends Controller
         "file"=>"required"
       ];
 
-      // $this->validate($req,$rules);
+      $this->validate($req,$rules);
       $routeFile = $req['file']->store("public");
       $fileName = basename($routeFile);
 

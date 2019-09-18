@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="img/faviconasa.ico">
     <!--FontAwesome -->
     <script src="https://kit.fontawesome.com/7907a05fb3.js"></script>
+    @yield('js')
 
 </head>
 
