@@ -72,10 +72,10 @@
                             Administración
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/admin">Panel de Control</a>
-                            <a class="dropdown-item" href="/agregar-tramite">Agregar trámites</a>
-                            <a class="dropdown-item" href="#">Agregar Trámites on-line</a>
-                            <a class="dropdown-item" href="#">Agregar Capacitación</a>
+                            <a class="dropdown-item" href="/admin" style= color:white>Panel de Control</a>
+                            <a class="dropdown-item" href="/agregar-tramite" style= color:white>Agregar trámites</a>
+                            <a class="dropdown-item" href="#" style= color:white>Agregar Trámites on-line</a>
+                            <a class="dropdown-item" href="#" style= color:white>Agregar Capacitación</a>
                         </div>
                     </li>
                   {{-- @endif --}}
@@ -127,8 +127,8 @@
                           Mi Perfil
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/perfil">Mi perfil</a>
-                          <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                          <a class="dropdown-item" href="/perfil"style= color:white>Mi perfil</a>
+                          <a class="dropdown-item" style= color:white href="{{ route('logout') }}" onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">
                               {{ __('Cerrar Sesión') }}
                           </a>
