@@ -63,7 +63,6 @@ label.usuario{
   letter-spacing: 1px;
   position: absolute;
   right: 50px
-
 }
 
 a {
@@ -255,4 +254,7 @@ a.nav-link, .dropdown-menu a {
     .navbar-light .navbar-nav .nav-link {
         color: white;
     }
+
+    label.usuario{
+      display: none;
 }
