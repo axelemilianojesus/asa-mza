@@ -40,21 +40,19 @@
                   {{-- <button class="btn my-2 my-sm-0" type="submit">
                     <i class="fas fa-search fa-lg"></i></button> --}}
               </form>
-
+              <div>
+                  @if (Auth::check())
+                  <label class="usuario">
+                      ¡Hola <b>{{Auth::user()->name}}</b>!
+                      {{-- <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%> --}}
+                  </label>
+                  @endif
+              </div>
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-twitter"></i></a></div>
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-instagram"></i></a></div>
               <div class="ml-auto p-2 bd-highlight"><a href="#"><i class="fab fa-skype"></i></a></div>
-              <div>
-                  @if (Auth::check())
-                  <label class="usuario">
-                      Sesion uniciada por: {{Auth::user()->name}}
-                      {{-- <img src="storage/{{Auth::user()->avatar}}" alt="" width="40px" border-radius=50%> --}}
-
-                  </label>
-
-                  @endif
-              </div>
+              <br>
 
           </div>
       </div>

@@ -39,7 +39,7 @@
 
 
 section :hover{  /*Color naranja del cursor cuando se posa en el nombre de cada muni */
-  color: white;
+  color: white!important;
 }
 
 .seccionesmuni h2{  /*Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni */
@@ -51,8 +51,8 @@ section :hover{  /*Color naranja del cursor cuando se posa en el nombre de cada 
 /* Correspondiente a la caja contenedora de cada municipalidad, ej "Capital" */
 
 .seccionesmuni {
-    width: 40vh;
-    height: 25vh;
+    width: 44vh;
+    height: 15vh;
     /* border: solid orange; */
     text-align: center;
     margin: 0.5em;
