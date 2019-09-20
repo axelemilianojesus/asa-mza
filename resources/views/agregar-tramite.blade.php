@@ -58,7 +58,8 @@ Agregar trámites
                 @enderror
         </div>
         <div class="formLog" id="file">
-            <p class="info">Seleccioná el archivo que vas a subir</p>
+            <p class="info"><br>Seleccioná el archivo que vas a subir. <br> <b>El archivo no debe superar los 5Mb de tamaño </b></p>
+
             <input id="file" class="file @error('file') is-invalid @enderror" type="file" name="file" value= "{{ old('file') }}">
             @error('avatar')
             <span class="invalid-feedback" role="alert">

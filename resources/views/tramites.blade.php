@@ -1,10 +1,19 @@
 @extends('layouts.plantilla')
+
 @section('css')
 <link rel="stylesheet" href="../../css/styleTramitesMuni.css">
 @endsection
+
 @section('title')
 Tramites de {{$munis->name}}
 @endsection
+
+@section('js')
+  <script type="text/javascript" src="../../js/tramites.js">
+
+  </script>
+@endsection
+
 @section('main')
  <div class="muni">
 
@@ -17,7 +26,13 @@ Tramites de {{$munis->name}}
            <ul>
              <section class="seccionesmuni">
              <li>
-               <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p>
+               {{-- <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p> --}}
+
+               <p>
+                 <a href="../storage/app/public/{{$tramite->file}}" download="{{$tramite->title}}">
+                     {{$tramite->title}}
+                 </a>
+               </p>
                <p>{{$tramite->description}}</p>
                @if (Auth::check())
 
@@ -25,7 +40,7 @@ Tramites de {{$munis->name}}
                  <form class="" action="/tramites/eliminar" method="post">
                    @csrf
                    <input type="hidden" name="id" value="{{$tramite->id}}">
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <button type="submit" class="btn btn-danger"onclick="deleletconfig()">Eliminar</button>
                  </form>
 
 
