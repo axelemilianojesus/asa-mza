@@ -27,7 +27,7 @@ section.enfoque,
 section.comite {
  justify-content: center;
    align-items: center;
-   margin: 5%;
+   /* margin: 5%; */
    margin-bottom: 10%;
    padding-bottom:20px;
    background: #E27F41;
@@ -59,7 +59,7 @@ h3#blanco{
   width: 100%;
   /* border-radius: 5%; */
   font-style: italic;
-  font-size: 25px;
+  font-size: 23px;
 }
 h1#naranja,
 h2#naranja,

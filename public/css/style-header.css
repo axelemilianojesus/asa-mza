@@ -9,7 +9,7 @@ Gris Oscuro: #333333 / Gris Clarito: #F7F7F7  */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-		text-align: center;
+		/* text-align: center; */
 }
 
 body {
@@ -53,7 +53,7 @@ body {
   color:#E27F41 !important;
   font-weight: bold !important;
   font-style: italic;
-  font-size: larger;
+  font-size: 25px;
 }
 label.usuario{
   font-size: 18px;
@@ -247,6 +247,7 @@ a.nav-link, .dropdown-menu a {
       width: 40%;
 
   }
+
 }
 /*_____________________MOBILE LAST*/
 /* Medium Devices, Desktops */
@@ -271,7 +272,6 @@ a.nav-link, .dropdown-menu a {
 
     label.usuario{
       display: none;
-
 
  }
 }
