@@ -106,18 +106,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/tramites-online">Tramites Online</a>
                     </li>
-                    {{-- <li class="nav-item dropdown">
 
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Tramites Online
-                      </a> --}}
-                    {{-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="servicios.php">Servicios 1</a>
-                          <a class="dropdown-item" href="working.php">Servicios 2</a>
-                          <!--<div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>-->
-                      </div> --}}
-                    {{-- </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="/nosotros">Nosotros</a>
                     </li>
@@ -188,8 +177,7 @@
                         <p>(+54) 261 669 7897</p>
                     </span>
                     <span class="d-flex"><i class="fas fa-envelope mr-2"></i>
-                        <p>info
-                            @asamendoza.org</p>
+                        <p>info@asamendoza.org</p>
                     </span>
                 </div>
                 <div class="footer-columna">

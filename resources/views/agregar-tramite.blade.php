@@ -14,7 +14,7 @@ Agregar trámites
 <div class="contenedorcontacto">
 
     <form action="/agregar-tramite" class="form" method="POST" enctype="multipart/form-data">
-      @csrf
+        @csrf
         <div class="form-header">
             <h1 class="form-titulo"><span>Agregar trámite</span></h1>
         </div>
@@ -48,7 +48,7 @@ Agregar trámites
 
             @foreach ($munis as $muni)
 
-            <option value="{{$muni->id}}"{{$muni->id == old('muni') ? "selected": ""}}>{{$muni->name}}</option>
+            <option value="{{$muni->id}}" {{$muni->id == old('muni') ? "selected": ""}}>{{$muni->name}}</option>
             @endforeach>
                 </select>
                 @error('municipio')

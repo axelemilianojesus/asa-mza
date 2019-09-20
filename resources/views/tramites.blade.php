@@ -5,7 +5,7 @@
 @endsection
 
 @section('title')
-Tramites de {{$munis->name}}
+Trámites de {{$munis->name}}
 @endsection
 
 @section('js')
@@ -18,7 +18,7 @@ Tramites de {{$munis->name}}
 <div class="muni">
 
     <div class="banner-standard bg-muni mb-0">
-        <h2 class="banner-texto-standard titulos-naranja"><span>TRAMITES {{$munis->name}}</span></h2>
+        <h2 class="banner-texto-standard titulos-naranja"><span>TRAMITES DE {{$munis->name}}</span></h2>
     </div>
     <div class="secciones max-width bg-image py-5">
         {{-- <section class="seccionesmuni"> --}}
@@ -32,7 +32,7 @@ Tramites de {{$munis->name}}
                         <a href="../storage/app/public/{{$tramite->file}}" download="{{$tramite->title}}">
                             {{$tramite->title}}
                         </a>
-                      
+
                     </p>
                     <p>{{$tramite->description}}</p>
 
