@@ -47,7 +47,7 @@ class RegisterController extends Controller
            'phone' => ['required','numeric'],
            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
            'password' => ['required', 'string', 'min:8', 'confirmed']
-       ]);dd($data);
+       ]);
    }
    /**
     * Create a new user instance after a valid registration.

@@ -1,8 +1,3 @@
- /** {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}*/
 .containerqsomos{
    flex-wrap: wrap;
    text-align: center;
@@ -42,29 +37,34 @@ section.titulo {
    background-size: cover;
 }
 section.subtitulo {
-   /*background-color: #333333;
-   text-transform: uppercase; */
+  /* background-color: #333333;*/
+   text-transform: uppercase;
 }
-h1#blanco,
-h2#blanco,
-h3#blanco{
+h1,
+h2,
+h3{
    color: #E27F41;
-   /* background-color: #333333; */
+   background-color: #333333;
    width: 100%;
-   /* border-radius: 5%; */
+
    font-style: italic;
-   font-size: 20px;
+   font-size: 25px;
+   border-bottom: 1px solid #333333;
+   font-weight: 600;
+   padding: 40px;
+  
+
 }
-h1#naranja,
-h2#naranja,
-h3#naranja{
-   color: #000000;
-   /* background-color: #333333; */
-   width: 100%;
-   /* border-radius: 5%; */
-   /* font-size: 25px; */
-  /* border-bottom: 1px solid #333333;
-   /* font-weight: 600; */
+h1,
+h2,
+h3{
+  /* color: #000000;
+  /*  background-color: #333333;
+  /* width: 100%;
+  /* border-radius: 5%; */
+    font-size: 25px;
+  border-bottom: 1px solid #333333;
+    font-weight: 600;
    padding: 10px;
 }
 section.comite {
@@ -75,17 +75,14 @@ section.comite {
    display: flex;
    justify-content: center;
 } */
-section.titulo h1.blanco,
-section.titulo h2.blanco {
-   background-color: #333333;
-   color: white;
-}
-section.titulo h1.naranja,
-section.titulo h2.naranja {
+
+section.titulo h1,
+section.titulo h2 {
    background-color: #333333;
    color: #E27F41;
 }
 @media only screen and (min-width: 880px){
+
  section.titulo,
  section.somos,
  section.mision,

@@ -11,17 +11,17 @@ Capacitaciones
 
 
 @section('main')
-  <div class="titulo banner-standard bg-capacitaciones">
+<div class="titulo banner-standard bg-capacitaciones">
 
-      <h1 class="capacitacion banner-texto-standard"> CAPACITACIONES</h1>
+    <h1 class="capacitacion banner-texto-standard"> CAPACITACIONES</h1>
 </div>
 <div class="container " id="capacitacion">
 
 
-  <div class="span subtitulo">
-      <span class="capacitacion">Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte. <br>
-        Pasá el mousse sobre la imagen para obtener más información.</span>
-  </div>
+    <div class="span subtitulo">
+        <span class="capacitacion">Porque sabemos que es importante estar siempre capacitado, es que ofrecemos este espacio para que puedas invertir en tu futuro. Mirá los cursos que A.S.A Mendoza tiene para ofrecerte. <br>
+            Pasá el mousse sobre la imagen para obtener más información.</span>
+    </div>
 
 
 
@@ -71,14 +71,14 @@ Capacitaciones
     </section>
 
     <section>
-      <hr>
-      <div class="cards">
-          <img class="cards" src="img/pagos.png">
-      </div>
-      <hr>
-      <div class="consultas">
-          <p><b>Tenés alguna consulta? </b> <i>Comunicate ahora con nuestros operadores y te ayudaran: <b> 261-669 7897 </b></i></p>
-      </div>
+        <hr>
+        <div class="cards">
+            <img class="cards" src="img/pagos.png">
+        </div>
+        <hr>
+        <div class="consultas">
+            <p><b>Tenés alguna consulta? </b> <i>Comunicate ahora con nuestros operadores y te ayudaran: <b> 261-669 7897 </b></i></p>
+        </div>
     </section>
 
     <section class="prod-relacionados">

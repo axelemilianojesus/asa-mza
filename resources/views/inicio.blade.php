@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 @section('css')
- <link rel="stylesheet" href="../../css/style-header.css">
+<link rel="stylesheet" href="../../css/style-header.css">
 
 @endsection
 
@@ -44,7 +44,7 @@ Inicio
                     <img src="img/slider/slider-3.jpg" class="d-block contain" alt="...">
                     <div class="carousel-caption d-md-block montserrat centered">
                         <h5 class="content-orange">MUNICIPALIDADES</h5>
-                        <p>Accedé a la guía completa de tramites por municipios. Además podés descargar toda la documentación necesaria desde aquí.</p>
+                        <p>Accedé a la guía completa de trámites por municipios. Además podés descargar toda la documentación necesaria desde aquí.</p>
                         <a class="btn cta" href="/municipalidades">Ver mas »</a>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ Inicio
             <div class="col-md-6 proyectos container-contacto">
                 <h2 class="bg-orange color-white">PROYECTOS</h2>
                 <p>
-                    Estamos en constante movimiento. Conocé mas sobre nuestros proyectos. <br> También podés sumarte a nuestros proyectos.
+                    Estamos en constante movimiento. Conocé más sobre nuestros proyectos. <br> También podés sumarte a ellos.
                 </p>
                 <p>
                     <a class="btn" href="/proyectos">Ver mas »</a>
@@ -100,7 +100,7 @@ Inicio
             <div class="col-md-6 nosotros container-contacto">
                 <h2 class="bg-black color-white">NOSOTROS</h2>
                 <p>
-                    Somos una organización sin fines de lucro. Conocémos un poco mas.
+                    Somos una organización sin fines de lucro. Conocénos un poco mas.
                 </p>
                 <p>
                     <a class="btn" href="/nosotros">Ver mas »</a>
@@ -110,7 +110,7 @@ Inicio
             <div class="col-md-6 proyectos container-contacto">
                 <h2 class="bg-orange color-white">TRAMITES ONLINE</h2>
                 <p>
-                    Podés acceder desde aca al Colegio de Arquitectos  <br> o a la Caja previsional.
+                    Podés acceder desde aca al Colegio de Arquitectos <br> o a la Caja previsional.
                 </p>
                 <p>
                     <a class="btn" href="/tramites-online">Ver mas »</a>
@@ -121,7 +121,7 @@ Inicio
             <div class="col-md-6 nosotros container-contacto">
                 <h2 class="bg-black color-white">NOTICIAS</h2>
                 <p>
-                    Enterate de las ultimas novedades. Mirá las ultimas noticias.
+                    Enterate de las últimas novedades. Mirá las noticias desde aquí.
                 </p>
                 <p>
                     <a class="btn" href="#">Ver mas »</a>
@@ -144,9 +144,5 @@ Inicio
         <img src="img/tarjetas.png" width="100%" alt="tarjetas">
     </div>
 </section>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 @endsection

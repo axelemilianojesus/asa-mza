@@ -1,6 +1,6 @@
 @extends('layouts.plantilla')
 @section('css')
- <link rel="stylesheet" href="../../css/stylesMuni.css">
+<link rel="stylesheet" href="../../css/stylesMuni.css">
 
 @endsection
 
@@ -11,24 +11,24 @@ Municipalidades
 
 
 @section('main')
-  <div class="muni">
+<div class="muni">
     <div class="banner-standard bg-muni mb-0">
         <h2 class="banner-texto-standard titulos-naranja"><span>MUNICIPALIDADES</span></h2>
     </div>
-      <div class="secciones max-width bg-image py-5">
+    <div class="secciones max-width bg-image py-5">
 
         @foreach ($munis as $muni)
 
-          <section class="seccionesmuni">
+        <section class="seccionesmuni">
             <button class="boton" type="submit" name="capital">
-              <h2><a href="/municipalidades/{{$muni->id}}">{{$muni->name}}</a></h2>
+                <h2><a href="/municipalidades/{{$muni->id}}">{{$muni->name}}</a></h2>
             </button>
-          </section>
+        </section>
 
         @endforeach
 
 
-      </div>
+    </div>
 
-  </div>
+</div>
 @endsection

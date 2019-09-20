@@ -11,9 +11,9 @@ Preguntas Frecuentes
 
 
 @section('main')
-  <div class="banner-standard bg-faq">
-      <h2 class="banner-texto-standard titulos-naranja"><span>PREGUNTAS FRECUENTES</span></h2>
-  </div>
+<div class="banner-standard bg-faq">
+    <h2 class="banner-texto-standard titulos-naranja"><span>PREGUNTAS FRECUENTES</span></h2>
+</div>
 <div class="container" id="preFrecuentes">
     <section class="preguntasFrecuentes">
         <div class="accordion" id="accordionExample">
@@ -94,7 +94,9 @@ Preguntas Frecuentes
                         </button>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="-body">
-                                <p> La licenciatura cuenta con áreas específicas de estudio y de prácticas escolares. Cuenta con aulas con proyector y pantallas, taller de dibujo, taller de pincel de aire, laboratorios de mecánica de materiales, laboratorio de computación con equipo y software especializado en Arquitectura, cuenta también con aulas equipadas con restiradores para la práctica diaria de clases y con recursos bibliográficos exclusivos de Arquitectura y otras áreas afines.</p>
+                                <p> La licenciatura cuenta con áreas específicas de estudio y de prácticas escolares. Cuenta con aulas con proyector y pantallas, taller de dibujo, taller de pincel de aire, laboratorios de mecánica de materiales,
+                                    laboratorio de computación con equipo y software especializado en Arquitectura, cuenta también con aulas equipadas con restiradores para la práctica diaria de clases y con recursos bibliográficos exclusivos de
+                                    Arquitectura y otras áreas afines.</p>
                             </div>
                         </div>
 
@@ -118,7 +120,9 @@ Preguntas Frecuentes
                         </button>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                             <div class="-body">
-                                <p> La Universidad Iberoamericana contempla dentro de su currícula el Área de Reflexión Universitaria que favorece el encuentro del alumno consigo mismo, en su irrepetible soledad interior, para que afronte conscientemente su libertad y asuma responsablemente su propio desarrollo personal. Esta área consta de varios cursos en los que se aprenden conocimientos que, mediante una metodología adecuada, provocan el planteamiento de los cuestionamientos valorales más importantes que todo hombre debe hacerse a sí mismo, para clarificar e integrar sus valores y compromisos particulares con la sociedad.</p>
+                                <p> La Universidad Iberoamericana contempla dentro de su currícula el Área de Reflexión Universitaria que favorece el encuentro del alumno consigo mismo, en su irrepetible soledad interior, para que afronte
+                                    conscientemente su libertad y asuma responsablemente su propio desarrollo personal. Esta área consta de varios cursos en los que se aprenden conocimientos que, mediante una metodología adecuada, provocan el
+                                    planteamiento de los cuestionamientos valorales más importantes que todo hombre debe hacerse a sí mismo, para clarificar e integrar sus valores y compromisos particulares con la sociedad.</p>
                             </div>
                         </div>
 
@@ -143,7 +147,8 @@ Preguntas Frecuentes
                             <div class="-body">
                                 <p> Dependiendo de la ciudad, área, barrio o zona, habrá diferentes ordenanzas que deben ser tomadas en cuenta y obedecidas, so pena de meternos en un montón de problemas y gastos innecesarios.
 
-Nuestro arquitecto podrá explicarnos cuáles son aquellas reglas que determinarán de una u otra forma detalles y variables del proyecto. Se trata de temas en general fastidiosos, pero tomemos en cuenta que son para beneficio nuestro y de todos los vecinos, así que lo mejor es tomárnoslo deportivamente. </p>
+                                    Nuestro arquitecto podrá explicarnos cuáles son aquellas reglas que determinarán de una u otra forma detalles y variables del proyecto. Se trata de temas en general fastidiosos, pero tomemos en cuenta que son para
+                                    beneficio nuestro y de todos los vecinos, así que lo mejor es tomárnoslo deportivamente. </p>
                             </div>
                         </div>
 

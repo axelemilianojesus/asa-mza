@@ -14,7 +14,7 @@ Agregar trámites
 <div class="contenedorcontacto">
 
     <form action="/agregar-tramite" class="form" method="POST" enctype="multipart/form-data">
-      @csrf
+        @csrf
         <div class="form-header">
             <h1 class="form-titulo"><span>Agregar trámite</span></h1>
         </div>
@@ -48,7 +48,7 @@ Agregar trámites
 
             @foreach ($munis as $muni)
 
-            <option value="{{$muni->id}}"{{$muni->id == old('muni') ? "selected": ""}}>{{$muni->name}}</option>
+            <option value="{{$muni->id}}" {{$muni->id == old('muni') ? "selected": ""}}>{{$muni->name}}</option>
             @endforeach>
                 </select>
                 @error('municipio')
@@ -58,7 +58,8 @@ Agregar trámites
                 @enderror
         </div>
         <div class="formLog" id="file">
-            <p class="info">Seleccioná el archivo que vas a subir</p>
+            <p class="info"><br>Seleccioná el archivo que vas a subir. <br> <b>El archivo no debe superar los 5Mb de tamaño </b></p>
+
             <input id="file" class="file @error('file') is-invalid @enderror" type="file" name="file" value= "{{ old('file') }}">
             @error('avatar')
             <span class="invalid-feedback" role="alert">

@@ -40,18 +40,19 @@ contenedordiv { /Este contenedor me permite centrar la imagen /
  border:none;
  background: none;
 }
-section :hover{  /Color naranja del cursor cuando se posa en el nombre de cada muni /
+
+/* section :hover{  Color naranja del cursor cuando se posa en el nombre de cada muni
  color: white;
 }
-.seccionesmuni h2{  /Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni /
+.seccionesmuni h2{  Cambia el icono del mouse por mano cuando esta arriba del nombre de cada muni
  cursor: pointer;
-}
+} */
 .seccionesmuni h2 a{
  text-decoration: none;
 }
 /* Correspondiente a la caja contenedora de cada municipalidad, ej "Capital" */
 .seccionesmuni {
- width: 53vh;
+ width: 60vh;
    height: 25vh;
    /* border: solid orange; */
    text-align: center;
@@ -64,6 +65,13 @@ section :hover{  /Color naranja del cursor cuando se posa en el nombre de cada m
    justify-content: center;
    margin-bottom: 2em;
    /* margin: 60px; */
+}
+.seccionesmuni p a{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.checked{
+  display: inline-flex;
 }
 @media only screen and (min-width: 880px) {
  div.muni{

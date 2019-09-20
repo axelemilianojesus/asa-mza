@@ -22,10 +22,11 @@ class TramiteController extends Controller
     }
 
     public function store(Request $req){
+      //reglas de validacion para guardar el archivo
       $rules=[
         "title"=> "required|string|min:6|max:200",
-        "descrption"=>"required|string|min:10|max:200",
-        "munis_id"=>"required",
+        "description"=>"required|string|min:10|max:200",
+        "muni"=>"required",
         "file"=>"required"
       ];
 
@@ -34,7 +35,7 @@ class TramiteController extends Controller
       $fileName = basename($routeFile);
 
 
-
+      // aqui es dnd pasamos los parametros y guardamos
       $newTramite = new Tramite();
       $newTramite->title = $req->title;
       $newTramite->description = $req->description;
