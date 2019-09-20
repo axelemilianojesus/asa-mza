@@ -55,7 +55,6 @@ body {
   font-style: italic;
   font-size: larger;
 }
-
 label.usuario{
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
@@ -228,7 +227,7 @@ a.nav-link, .dropdown-menu a {
     align-items: center;
     position: relative;
     top: 40%;
-    /* width: 40%; */
+    width: 40%;
 }
 
 .container-contacto {
@@ -258,15 +257,4 @@ a.nav-link, .dropdown-menu a {
 
     label.usuario{
       display: none;
-    }
-
-
-@media only screen and (max-width: 880px){
-  .capacitacion, .titulos-naranja{
-    color:#E27F41 !important;
-    font-weight: bold !important;
-    font-style: italic;
-    font-size: larger;
-    font-size: 22px;
-  }
 }

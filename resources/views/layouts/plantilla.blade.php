@@ -126,7 +126,7 @@
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Mi Perfil
                       </a>
-                      <div class="dropdown-menu"   aria-labelledby="navbarDropdown">
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="/perfil" style= color:white>Mi perfil</a>
                           <a class="dropdown-item" style= color:#E27F41 href="{{ route('logout') }}" onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">
