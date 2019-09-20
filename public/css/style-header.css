@@ -227,7 +227,8 @@ a.nav-link, .dropdown-menu a {
     align-items: center;
     position: relative;
     top: 40%;
-    width: 40%;
+    /* width: 40%; */
+
 }
 
 .container-contacto {
@@ -235,8 +236,21 @@ a.nav-link, .dropdown-menu a {
 
 }
 
+@media only screen and (min-width: 768px) {
+  .banner-texto-standard {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 20px;
+      color: white;
+      align-items: center;
+      position: relative;
+      top: 40%;
+      width: 40%;
+
+  }
+}
 /*_____________________MOBILE LAST*/
 /* Medium Devices, Desktops */
+
 @media (max-width : 992px) {
     .navbar {
         padding: 0px;
@@ -257,4 +271,7 @@ a.nav-link, .dropdown-menu a {
 
     label.usuario{
       display: none;
+
+
+ }
 }
