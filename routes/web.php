@@ -17,7 +17,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/register', 'RegisterController@create');
 // Route::post('/register', 'RegisterController@create');
 Route::get('/working','HomeController@working');
-Route::get('/admin','HomeController@admin');// ->middleware("Auth");
+Route::get('/admin','HomeController@admin')->middleware("auth");
 /*
 |--------------------------------------------------------------------------
 |USER CONTROLLER
