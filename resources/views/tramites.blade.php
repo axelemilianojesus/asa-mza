@@ -37,6 +37,10 @@ Trámites de {{$munis->name}}
                     <p>{{$tramite->description}}</p>
 
                     @if (Auth::check())
+
+                    @if (auth()->user()->email =='javier@correo.com')
+
+
                     <div class="checked">
 
 
@@ -48,6 +52,7 @@ Trámites de {{$munis->name}}
                         </form>
 
                     </div>
+                    @endif
                     @endif
                 </li>
         </ul>
