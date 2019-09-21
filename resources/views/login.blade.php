@@ -10,10 +10,6 @@ Ingresar al Sitio
 
 @section('main')
 
-<body class="forms" id="login">
-
-
-
     <section class="login m-0 py-5">
 
 
