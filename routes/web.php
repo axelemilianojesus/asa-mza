@@ -26,6 +26,7 @@ Route::get('/admin','HomeController@admin')->middleware("auth");
 */
 
 Route::get('/perfil', 'UserController@perfil');
+Route::get('/user/download/{file_name}/{file_title}','UserController@download');
 /*
 |--------------------------------------------------------------------------
 | MUNI CONTROLLER

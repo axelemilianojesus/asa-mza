@@ -29,9 +29,7 @@ Trámites de {{$munis->name}}
                     {{-- <p><a href="/tramites/{{$tramite->id}}">{{$tramite->title}}</a></p> --}}
 
                     <p>
-                        <a href="../storage/app/public/{{$tramite->file}}" download="{{$tramite->title}}">
-                            {{$tramite->title}}
-                        </a>
+                        <a href="/user/download/{{$tramite->file}}/{{$tramite->title}}"> {{$tramite->title}} </a>
 
                     </p>
                     <p>{{$tramite->description}}</p>
